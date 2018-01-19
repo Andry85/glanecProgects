@@ -6,6 +6,8 @@
         $('.region-header #block-system-main-menu .menu').slicknav({
             label: ''
         });
+
+        $("#block-webform-client-block-16").wrapInner("<div class='inner'></div>");
 	   
 
 	});
