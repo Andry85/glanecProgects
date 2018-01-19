@@ -1,0 +1,13 @@
+#block-drupal-package-block-header-phones-number {
+	display: none;
+}
+.slicknav_menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    z-index: 901;
+}
+.region-header #block-system-main-menu {
+  	display: none;
+  }

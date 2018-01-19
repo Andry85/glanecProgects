@@ -1,0 +1,68 @@
+.header_wrapper {
+	padding: 0 10px;
+}
+.header_content {
+	position: static;
+	width: auto;
+}
+.header_content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.region-header #block-system-main-menu {
+	margin-left: 40px;
+}
+.region-header #block-system-main-menu .menu li a {
+	margin-right: 40px;
+}
+
+@media (max-width: 1135px) {
+	.region-header #block-system-main-menu .menu li a {
+		margin-right: 30px;
+	}
+
+}
+@media (max-width: 1077px) {
+	.region-header #block-system-main-menu .menu li a {
+		margin-right: 25px;
+
+	}
+	#block-drupal-package-block-header-phones-number {
+		width: 200px;
+	}
+	#block-drupal-package-block-header-phones-number .field-items a {
+		font-size: 18px;
+	}
+	.field-name-field-operator-icon {
+		margin-top: 0px;
+	}
+	#block-drupal-package-block-header-phones-number .field-items .field-item {
+		padding-top: 19px;
+	}
+
+}
+@media (max-width: 1015px) { 
+	.region-header #block-system-main-menu .menu li a {
+		margin-right: 20px;
+
+	}
+}
+
+@media (max-width: 991px) { 
+	.logo_wrapper {
+	    margin-top: 36px;
+	    width: 80px;
+	}
+	.region-header #block-system-main-menu {
+    	margin-left: 20px;
+	}
+}
+
+@media (max-width: 855px) { 
+	.region-header #block-system-main-menu .menu li a {
+		margin-right: 15px;
+		font-size: 12px
+
+	}
+}
