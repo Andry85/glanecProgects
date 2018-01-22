@@ -6,7 +6,7 @@
     position: fixed;
     right: 0;
     top: 25px;
-    z-index: 901;
+    z-index: 91;
 }
 .region-header #block-system-main-menu {
   	display: none;
@@ -143,7 +143,7 @@
 }
 
 #block-webform-client-block-16 .inner {
-	height: 492px;
+	height: 80vh;
 	overflow-y: scroll;
 	padding-right: 20px;
 }
@@ -168,16 +168,20 @@
     top: -25px;
 }
 .product_popup_wrapp {
-	height: 492px;
+	height: 80vh;
+	margin: 0!important;
+	transform: translate(-50%, -50%);
 }
 .product_popup {
 	height: 492px;
 }
 #block-views-blog-block-1 .popup_wrapper {
-	height: 492px;
+	height: 80vh;
+	margin: 0!important;
+	transform: translate(-50%, -50%);
 }
 #block-views-blog-block-1 .popup_blog {
-	height: 492px;
+	height: 100%;
 }
 .product_popup_wrapp .close {
 	right: -12px;
@@ -188,6 +192,7 @@
 	left: 0;
 	top: 0;
 	width: 100%;
+	z-index: 90;
 }
 .wrapper {
 	padding-top: 90px;
