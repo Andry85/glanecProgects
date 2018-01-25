@@ -13,6 +13,7 @@
   }
 #block-drupal-package-block-header-slider .all_content {
   	width: 100%;
+  	top: 65px;
   }
 #block-drupal-package-block-header-slider .all_content .text_1 {
 	padding: 0 10px;
@@ -21,7 +22,19 @@
 	width: auto;
 	max-width: 350px;
 	float: right;
+	padding-top: 35px;
 }
+#block-drupal-package-block-header-slider .all_content .text_1 p:first-child {
+	font-size: 16px;
+}
+#block-drupal-package-block-header-slider .all_content .text_1 p:nth-child(2) {
+	font-size: 36px;
+}
+#block-drupal-package-block-header-slider .all_content .text_1 ul li {
+	font-size: 15px;
+}
+
+
 .product_nav_wrapp {
 	width: 50%;
 }
@@ -53,7 +66,8 @@
 }
 #block-views-product-block .block_content .view-product .view-content .views-row {
 	width: 50%;
-	padding-right: 0;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 #block-views-product-block .block_content .view-content .views-field-title {
 	height: auto;
@@ -118,6 +132,7 @@
 #block-webform-client-block-16 label, #user-login label {
 	width: 100%;
 	float: none;
+	text-align: center;
 }
 #block-webform-client-block-16 input, #user-login input {
 	width: 100%;
@@ -143,7 +158,7 @@
 }
 
 #block-webform-client-block-16 .inner {
-	height: 80vh;
+	height: 60vh;
 	overflow-y: scroll;
 	padding-right: 20px;
 }
@@ -152,6 +167,30 @@
 	padding: 20px 10px;
 }
 
+#block-drupal-package-block-header-slider .slider_front .slid .field-name-field-slider-img {
+	width: 100%;
+	margin: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	height: 400px;
+}
+#block-drupal-package-block-header-slider {
+	height: 400px;
+}
+.slick-slide img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+#block-drupal-package-block-header-slider .social_wrapper {
+	top: 15px;
+}
 
 #block-webform-client-block-16 .captcha, #user-login .captcha {
 	padding-left: 0;
@@ -198,6 +237,25 @@
 	padding-top: 90px;
 }
 
+.header .logo_wrapper {
+	width: auto;
+	margin-top: 15px;
+}
+
+#block-views-product-block .block_content .view-content .views-field-nid .field-content .button_show {
+	margin: 0 auto;
+}
+#block-views-events-block-1 .view-id-events .view-content .views-field-body-et {
+	text-align: center;
+}
+#block-views-events-block-1 .view-id-events .view-content .views-field-nid {
+	margin-left: auto;
+	margin-right: auto;
+}
+#block-views-blog-block-1 .view-display-id-block_1 .view-content .views-field-field-blog-desc {
+	text-align: center;
+}
+
 
 @media (max-width: 600px) { 
 	.product_nav_wrapp:hover .wrap_product_img {
@@ -213,12 +271,13 @@
 	}
 	#block-drupal-package-block-contacts .logo_wrapper {
 		width: 100%;
+		padding: 0 0 25px 0;
 	}
 	.contacts_wrapper {
 		flex-wrap: wrap;
 	}
 	#gl_devel {
-		top: 5px;
+		top: 84px;
 		left: 10px;
 		white-space: nowrap;
 	}
@@ -250,6 +309,8 @@
 	}
 	#block-views-product-block .block_content .view-product .view-content .views-row {
 		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	#block-views-product-block .block_content .view-product .view-content .views-row .field-content img {
 		display: block;
@@ -257,6 +318,9 @@
 	}
 	.view-display-id-page_1 .view-content .views-row {
 		width: 100%;
+	}
+	#block-views-product-block .block_content .view-content .views-field-body .field-content {
+		text-align: center;
 	}
 
 }

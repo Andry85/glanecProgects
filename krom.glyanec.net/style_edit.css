@@ -317,7 +317,7 @@ body.ie_browser #gl_devel span {
 /*********slider*********/
 #block-drupal-package-block-header-slider .social_wrapper {
   position: absolute;
-  z-index: 90;
+  z-index: 89;
   right: 0;
   top: 51px;
 }
