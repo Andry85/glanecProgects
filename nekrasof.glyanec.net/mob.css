@@ -1,0 +1,189 @@
+.slicknav_menu {
+  display: none;
+  background: none;
+}
+.slicknav_nav {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 0 20px 0;
+}
+.slicknav_btn {
+  z-index: 1;
+  border-radius: 0!important;
+  background: #ce242c!important;
+}
+.slicknav_icon-bar {
+  transition: all 0.3s ease-in;
+}
+.slicknav_btn.slicknav_open .slicknav_icon-bar {position: absolute; top: 10px;}
+.slicknav_btn.slicknav_open  .slicknav_icon-bar:first-child {display: none;}
+.slicknav_btn.slicknav_open  .slicknav_icon-bar:nth-child(2) {transform: rotate(45deg);}
+.slicknav_btn.slicknav_open  .slicknav_icon-bar:nth-child(3) {transform: rotate(-45deg);}
+.slicknav_nav a {
+	color: #000;
+	text-transform: uppercase;
+}
+.slicknav_nav a:hover {
+	border-radius: 0;
+}
+
+
+@media (max-width: 1548px) { 
+	.header .region-header .block_system_main_menu {
+		width: 90%;
+	}
+}
+@media (max-width: 1431px) { 
+	.not-front .header .logo_wrapper {
+		margin-left: -131px;
+	}
+	.header .region-header .block_system_main_menu {
+		width: 85%;
+	}
+}
+@media (max-width: 1395px) { 
+	.not-front .header .logo_wrapper {
+		margin-left: -141px;
+	}
+}
+@media (max-width: 1327px) { 
+	.not-front .header .logo_wrapper {
+		margin-left: -151px;
+	}
+}
+
+@media (max-width: 1312px) { 
+	.header .region-header .block_block_1 .menu .parent_link > a {
+		padding: 0 20px;
+	}
+	.not-front .header .logo_wrapper {
+		margin-left: -161px;
+	}
+	.header .region-header .block_system_main_menu {
+		width: 80%;
+	}
+}
+@media (max-width: 1300px) { 
+	html {
+		min-width: inherit;
+	}
+	.header .region-header .block_block_1 .menu .parent_link > a {
+		padding: 0 17px;
+	}
+	
+}
+@media (max-width: 1284px) { 
+	.header .region-header .block_block_1 {
+		padding-right: 0;
+	}
+	.header .block_locale_language {
+		position: relative;
+		z-index: 2;
+	}
+	.header .region-header .block_system_main_menu {
+		width: auto;
+	}
+	.front .header .logo_wrapper {
+		left: 10px;
+	}
+}
+@media (max-width: 1199px) { 
+	.not-front .header .logo_wrapper {
+		margin-left: -121px;
+		top: 75px;
+	}
+	.header .region-header .block_block_1 .menu .group_item {
+		max-width: none;
+	}
+	.header .region-header .block_block_1 .menu .group_item:nth-child(even) {
+		float: none;
+	}
+	.content_top_region {
+		padding-top: 360px;
+	}
+	.front .header .logo_wrapper {
+		top: 75px;
+	}
+	.front .header .region-header {
+		padding: 0 0 0 10px;
+	}
+}
+
+@media (max-width: 1100px) { 
+	.header .region-header .block_block_1 .menu .parent_link > a {
+		padding: 0 14px;
+	}
+}
+@media (max-width: 1045px) { 
+	.header .region-header .block_block_1 .menu .parent_link > a {
+		padding: 0 13px;
+		font-size: 15px;
+	}
+	.header .region-header .block_system_main_menu .block_content > .menu > li > a {
+		font-size: 15px;
+	}
+}
+
+/* Tablet */
+@media (max-width: 991px) { 
+	.header .region-header .block_block_1 .menu .parent_link > a {
+		padding: 0 12px;
+		font-size: 14px;
+	}
+	.header .region-header .block_system_main_menu .block_content > .menu > li > a {
+		font-size: 14px;
+	}
+	.header .region-header .block_block_1 .menu .parent_link .child_wrap {
+		padding: 15px;
+	}
+}
+@media (max-width: 930px) { 
+	.header .region-header .block_block_1 .menu .parent_link > a {
+		padding: 0 11px;
+		font-size: 13px;
+	}
+	.header .region-header .block_system_main_menu .block_content > .menu > li > a {
+		font-size: 13px;
+	}
+}
+@media (max-width: 845px) { 
+	.header .region-header .block_block_1 .menu .parent_link > a {
+		padding: 0 9px;
+		font-size: 12px;
+	}
+	.header .region-header .block_system_main_menu .block_content > .menu > li > a {
+		font-size: 12px;
+	}
+	.header .block_locale_language .block_content ul li a {
+		padding: 0 6px;
+	}
+	.header .region-header .block_block_1 .menu .parent_link .child_wrap a {
+		font-size: 13px;
+		margin-bottom: 15px;
+	}
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+	.slicknav_menu {
+	    display: block;
+	    position: fixed;
+	    left: 0;
+	    top: 4px;
+	    z-index: 101;
+	}
+	.header .block_locale_language {
+		margin-right: 4px;
+	}
+
+	.header .menu {
+	  	display: none!important;
+	}
+	.header {
+		height: 55px;
+	}
+
+}
