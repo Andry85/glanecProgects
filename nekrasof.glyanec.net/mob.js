@@ -13,9 +13,51 @@
 	        if(wiw < 992) {
  				$('.block_drupal_package_block_about_main .field_inner_wrap_field_about_img').insertAfter('.block_drupal_package_block_about_main .field_inner_wrap_field_about_main_link');
 	        }
+	        if( (wiw < 992) && (wiw > 767) ) {
+ 				$('.block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_dpb_title_field').insertBefore('.block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_field_contacts_img');
+	        }
+	        
 	        if(wiw < 768) { 
 		       $("<div class='mobileSlogan'></div>").insertAfter(".front .header");
 		       $('.header .logo_wrapper .block_drupal_package_block_slogan p br').remove();
+
+
+		       $('.block_views_clients_block_2 .view-content').slick({
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					fade: true,
+					adaptiveHeight:true
+				});
+
+				$('<div class="slider_buttons"><div class="slider_left"></div><div class="slider_right"></div></div>').appendTo('.block_views_clients_block_2');
+
+		       $('.block_views_clients_block_2 .slider_buttons .slider_right').livequery('click', function() {
+					$('.block_views_clients_block_2 .slick-arrow.slick-next').click();
+				});
+				$('.block_views_clients_block_2 .slider_buttons .slider_left').livequery('click', function() {
+					$('.block_views_clients_block_2 .slick-arrow.slick-prev').click();
+				});
+
+				$(".sidebar-first .middle_after_bottom .middle_inner .block .block_title").each(function(){
+			        $(this).wrapInner("<div class='accordBlock'></div>");
+			    });
+
+			    $('.block_drupal_package_block_gifts_main .field-name-dpb-title-field .field-item').wrapInner("<div class='accordBlockPresents'></div>");
+
+			    $('.block_drupal_package_block_gifts_main .field_inner_wrap_dpb_title_field').nextAll('div').wrapAll("<div class='presentsWrap'></div>");
+			    $('.accordBlock').click(function(){
+			    	$(this).toggleClass("active");
+		    		$(this).parents('.block').find('.block_content').slideToggle('slow');
+			    });
+			    $('.accordBlockPresents').click(function(){
+		    		$(this).parents('.block_content').find('.presentsWrap').slideToggle('slow');
+		    		$(this).toggleClass("active");
+			    });
+
+			    $('.block_views_diplomas_block_2 .view-diplomas.view-display-id-block_2 .view-content .views-row .views-field-field-node-text .slider_buttons').prependTo('.block_views_diplomas_block_2 .view-diplomas.view-display-id-block_2 .view-content');
+
+			    
 		        
 	        } 
 	    };

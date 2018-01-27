@@ -67,6 +67,9 @@
 	.header .region-header .block_system_main_menu {
 		width: 85%;
 	}
+	.block_views_clients_block_1 .view-content, .block_views_clients_block_2 .view-content {
+		margin-right: 0;
+	}
 }
 @media (max-width: 1395px) { 
 	.not-front .header .logo_wrapper {
@@ -86,6 +89,64 @@
 	.block_views_services_block_3 {
 		padding: 0 10px;
 	}
+	.view-offers.view-display-id-block_5 .view-content .views-row .views-field-field-image img,
+	.view-offers.view-display-id-block_1 .view-content .views-row .views-field-field-image img, 
+	.view-offers.view-display-id-block_2 .view-content .views-row .views-field-field-image img {
+		width: 100%;
+	}
+	.view-offers.view-display-id-block_5 .view-content .views-row .views-field-title-field a, 
+	.view-offers.view-display-id-block_1 .view-content .views-row .views-field-title-field a,
+	.view-offers.view-display-id-block_2 .view-content .views-row .views-field-title-field a {
+	 	min-height: 85px;
+	}
+	 .block_drupal_package_block_benefits_main {
+	 	padding-left: 10px;
+	 	padding-right: 10px;
+	 }
+	 .block_views_clients_block_2 .block_title {
+	 	padding-left: 0;
+
+	 }
+	 .block_views_clients_block_2 .block_content {
+	 	padding-left: 0;
+	 }
+	 .block_views_clients_block_2 {
+	 	padding-left: 10px;
+	 	padding-right: 10px;
+	 }
+	.sidebar-first .middle_after_bottom .middle_inner {
+		padding-left: 0;
+	 }
+	 .block_views_reviews_block_3 {
+	 	padding-left: 10px;
+	 	padding-right: 10px;
+	 }
+	 .block_views_reviews_block_3 img {
+	 	width: 100%;
+	 }
+	 .block_views_events_block_3 .view-events.view-display-id-block_3 .views-row .views-fieldset,
+	 .block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_dpb_title_field,
+	 .block_views_diplomas_block_2 .view-diplomas.view-display-id-block_2 .view-content
+	  {
+	 	margin-right: 20%;
+	 }
+
+	 .block_views_events_block_3 .slick-list {
+	 	margin: 0;
+	 	padding: 0;
+	 }
+	 .block_views_events_block_3,.block_views_diplomas_block_2 {
+	 	padding-left: 10px;
+	 	padding-right: 10px;
+	 }
+	 .block_views_news_block_4 .view-news.view-display-id-block_4 .view-content {
+	 	justify-content: center;
+	 	margin: 0;
+	 }
+	 .block_views_news_block_4 .view-news.view-display-id-block_4 .views-row {
+	 	margin-left: 15px;
+	 	margin-right: 15px;
+	 }
 }
 @media (max-width: 1327px) { 
 	.not-front .header .logo_wrapper {
@@ -103,6 +164,9 @@
 	.header .region-header .block_system_main_menu {
 		width: 80%;
 	}
+	.block_views_events_block_3 .view-events.view-display-id-block_3 .views-row .views-fieldset {
+	 	margin-right: 18%;
+	 }
 }
 @media (max-width: 1300px) { 
 	html {
@@ -135,6 +199,24 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	#block-views-offers-block-5 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.block_drupal_package_block_gifts_main {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.block_views_news_block_4 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_dpb_title_field {
+		margin-right: 14%;
+	}
+	.block_views_diplomas_block_2 .view-diplomas.view-display-id-block_2 .view-content {
+		margin-right: 13%;
+	}
 }
 @media (max-width: 1199px) { 
 	.not-front .header .logo_wrapper {
@@ -156,6 +238,15 @@
 	.front .header .region-header {
 		padding: 0;
 	}
+	.block_views_events_block_3 .view-events.view-display-id-block_3 .views-row .views-fieldset {
+	 	margin-right: 12%;
+	}
+	.block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_dpb_title_field {
+		margin-right: 7%;
+	}
+	.block_views_diplomas_block_2 .view-diplomas.view-display-id-block_2 .view-content {
+		margin-right: 8%;
+	}
 	
 }
 
@@ -164,6 +255,15 @@
 		padding: 0 14px;
 	}
 	.block_drupal_package_block_about_main .field_inner_wrap_field_about_img {width: 50%;}
+	.block_views_news_block_4 .view-news.view-display-id-block_4 .views-row {
+		flex-basis: 265px;
+	}
+	.block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_dpb_title_field {
+		margin-right: 0;
+	}
+	.block_views_diplomas_block_2 .view-diplomas.view-display-id-block_2 .view-content {
+		margin-right: 0;
+	}
 }
 @media (max-width: 1045px) { 
 	.header .region-header .block_block_1 .menu .parent_link > a {
@@ -172,6 +272,12 @@
 	}
 	.header .region-header .block_system_main_menu .block_content > .menu > li > a {
 		font-size: 15px;
+	}
+	.block_views_events_block_3 .view-events.view-display-id-block_3 .views-row .views-fieldset {
+	 	margin-right: 10%;
+	}
+	.block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_dpb_title_field .field-name-dpb-title-field {
+		padding-left: 35px;
 	}
 }
 
@@ -195,6 +301,56 @@
 		width: 100%;
 		float: none;
 	}
+	.block_drupal_package_block_about_main .field_inner_wrap_field_about_first_block > 
+	.field-name-field-about-first-block > .field-items > .field-item .field-name-field-count {
+		font-size: 58px;
+	}
+	.view-offers.view-display-id-block_5 .view-content {
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.view-offers.view-display-id-block_5 .view-content .views-row {
+		width: auto;
+		flex-basis: 30.1%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.view-reviews.view-display-id-block_3 .view-content .views-row {
+		margin: 15px 0;
+		padding: 0 5px;
+		width: 33.3%;
+	}
+	.view-reviews.view-display-id-block_3 .view-content {
+		margin: 0;
+	}
+	.block_views_events_block_3 .view-events.view-display-id-block_3 .views-row .views-fieldset {
+	 	margin-right: 0;
+	 }
+	 .block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_field_contacts_img {
+	 	margin-right: 0;
+
+	 }
+	 .block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_dpb_title_field {
+	 	float: none;
+	 	width: auto;
+	 	padding: 0;
+	 }
+	 .block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_dpb_title_field .field-name-dpb-title-field {
+	 	padding: 0 0 10px 0;
+	 }
+	 .block_views_diplomas_block_2 .view-diplomas.view-display-id-block_2 .view-content {
+	 	float: none;
+	 	width: auto;
+	 	max-width: 500px;
+	 	margin: 0 auto;
+	 }
+	 .block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_field_contacts_img {
+	 	position: static;
+	 	float: none;
+	 }
+
 }
 @media (max-width: 930px) { 
 	.header .region-header .block_block_1 .menu .parent_link > a {
@@ -356,25 +512,272 @@
 		background: #fff;
 	}
 	.block_drupal_package_block_about_main .field_inner_wrap_dpb_title_field {
-		padding: 18px 10px 0 10px;
+		padding: 8px 10px 0 10px;
 	}
 	.block_drupal_package_block_about_main .field_inner_wrap_dpb_title_field .field-name-dpb-title-field {
 		text-align: center;
 		font-size: 36px;
+		margin: 0;
 	}
 	.block_drupal_package_block_about_main .field_inner_wrap_field_block_body {
-		padding: 10px;
+		padding: 10px 10px 5px 10px;
 		text-align: center;
-		margin-bottom: 13px;
 	}
 	.block_drupal_package_block_about_main .field_inner_wrap_field_about_main_link {
 		padding: 10px 14px;
 		margin-bottom: 24px;
 	}
 	.block_drupal_package_block_about_main .field_inner_wrap_field_about_main_link .field-name-field-about-main-link > .field-items > .field-item + .field-item {
-		margin-top: 37px;
+		margin-top: 17px;
+	}
+	.block_drupal_package_block_about_main .field_inner_wrap_field_about_first_block > .field-name-field-about-first-block > .field-items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.block_drupal_package_block_about_main .field_inner_wrap_field_about_first_block > .field-name-field-about-first-block > .field-items > .field-item {
+		width: 50%;
+		display: flex;
+  		justify-content: center;
+  		flex-direction: column;
+  		height: 137px;
+  		padding: 0 15px;
+	}
+	.block_drupal_package_block_about_main .field_inner_wrap_field_about_first_block > .field-name-field-about-first-block > .field-items > .field-item .field-name-field-prefix, 
+	.block_drupal_package_block_about_main .field_inner_wrap_field_about_first_block > .field-name-field-about-first-block > .field-items > .field-item .field-name-field-suffix-bottom {
+		font-size: 14px;
+		font-weight: 400;
+	}
+	.block_drupal_package_block_about_main .field_inner_wrap_field_about_first_block > 
+	.field-name-field-about-first-block > .field-items > .field-item .field-name-field-count {
+		font-size: 24px;
+		padding: 6px 0 3px 0;
+		font-weight: 400;
+	}
+	.block_drupal_package_block_about_main .field_inner_wrap_field_about_first_block > .field-name-field-about-first-block > .field-items > .field-item .field-name-field-suffix {
+		font-size: 24px;
+		font-weight: 400;
+		position: relative;
+		top: 7px;
+	}
+	#block-views-offers-block-5 {
+		display: none;
+	}
+	.block_drupal_package_block_benefits_main {
+		background: #fff;
+		padding-top: 19px;
+		margin-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.block_drupal_package_block_benefits_main .field-name-dpb-title-field {
+		text-align: center;
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 1.2;
+		margin-bottom: 21px;
+	}
+	.block_drupal_package_block_benefits_main .field-name-field-benefits > .field-items > .field-item {
+		flex-basis: 50%;
+		max-width: 50%!important;
+		padding: 31px 15px 20px 15px;
+	}
+	.block_drupal_package_block_benefits_main .field-name-field-benefits > .field-items > .field-item .field-name-field-benefits-icon {
+		    height: 51px;
+    		width: 51px;
+    		line-height: 51px;
+    		margin-bottom: 17px;
+	}
+	.block_views_clients_block_2 .block_title {
+		font-size: 36px;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 40px;
+		margin-top: 0px;
+	}
+	.block_views_clients_block_2 {
+		padding-top: 16px;
+		position: relative;
+		padding-bottom: 78px;
+	}
+	.block_views_clients_block_1 .views-row, .block_views_clients_block_2 .views-row {
+		display: block;
+		margin: 0;
+	}
+	.block_views_clients_block_2 .block_content .views-row {
+		margin: 0;
+	}
+	.block_views_clients_block_2  .slider_buttons {
+		top: auto;
+		bottom: 25px;
+		width: 100%;
+	}
+	.block_views_clients_block_2 .slider_buttons div.slider_left {
+		position: absolute;
+		left: 30px;
+	}
+	.block_views_clients_block_2 .slider_buttons div.slider_right {
+		position: absolute;
+		right: 30px;
+	}
+	.block_views_reviews_block_3 {
+		background: #fff;
+		padding-top: 60px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.block_views_reviews_block_3 .block_content {
+		display: none;
+	}
+	.sidebar-first .middle_after_bottom .middle_inner .block .block_title {
+		margin: 0;
+	}
+	.accordBlock,.accordBlockPresents {
+	    background: white;
+	    box-shadow: 0 -3px 15px rgba(19, 41, 68, 0.12);
+	    padding: 17px 2px;
+	    text-align: center;
+	    -moz-transition: 0.3s;
+	    -webkit-transition: 0.3s;
+	    -o-transition: 0.3s;
+	    -ms-transition: 0.3s;
+	    transition: 0.3s;
+	    font-size: 24px;
+	    font-weight: 400;
+	    cursor: pointer;
+	}
+	.accordBlock:before,.accordBlockPresents:before {
+		content: '';
+		background: url(../images/mobimg/expand-arrow.png) no-repeat;
+		width: 13px;
+		height: 7px;
+		display: inline-block;
+		margin-right: 10px;
+		position: relative;
+		top: -3px;
+		transition: all 0.3s ease;
+
+	}
+	.accordBlock.active:before,.accordBlockPresents.active:before {
+		transform: rotate(-180deg);
 	}
 
-	
 
+	.block_block_6 {
+		display: none;
+	}
+	.block_block_7 {
+		padding: 0;
+	}
+	.block_views_events_block_3 .block_content {
+		display: none;
+	}
+	.block_drupal_package_block_gifts_main .field-name-dpb-title-field {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	.presentsWrap {
+		display: none;
+	}
+	.block_drupal_package_block_gifts_main {
+		padding: 0;
+	}
+	.block_views_events_block_3 {
+		padding: 0;
+	}
+	#block-views-news-block-4 .block_content {
+		display: none;
+	}
+	.block_views_news_block_4 {
+		position: relative;
+		padding: 0;
+
+	}
+	.block_views_events_block_3 .view-events.view-display-id-block_3 .views-row .views-field-field-image {
+		position: static;
+	}
+	.block_views_events_block_3 .view-events.view-display-id-block_3 .views-row .views-field-field-image img {
+		width: 100%;
+	}
+	.block_views_events_block_3 .view-events.view-display-id-block_3 .views-row .views-fieldset {
+		float: none;
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 50px;
+	}
+	.block_drupal_package_block_gifts_main .field-name-field-block-body {
+		float: none;
+		margin: 15px 10px;
+		width: 100%
+	}
+	.block_drupal_package_block_gifts_main .field_inner_wrap_field_gifts_main {
+		padding: 0 10px;
+	}
+	.block_views_news_block_4 .view-news.view-display-id-block_4 .view-content {
+		margin: 15px 0;
+	}
+	.block_views_news_block_4 .view-news.view-display-id-block_4 .views-row {
+		flex-basis: 50%;
+	}
+	.block_views_news_block_4 .view-news.view-display-id-block_4 .views-row .views-field-field-image img {
+		width: 100%;
+	}
+	.block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_field_contacts_img {
+	 	display: none;
+	}
+	.block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_dpb_title_field {
+		text-align: center;
+	}
+	.block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_dpb_title_field .field-name-dpb-title-field {
+		font-size: 36px;
+		text-align: center;
+		line-height: 1.2;
+		padding: 0;
+	}
+	.block_views_diplomas_block_2 .view-diplomas.view-display-id-block_2 .view-content .views-row .views-field-field-node-text {
+		display: none;
+	}
+	.block_views_diplomas_block_2 .view-diplomas.view-display-id-block_2 .view-content .views-row .views-fieldset {
+		float: none;
+		margin: 0 auto;
+	}
+	.block_views_diplomas_block_2 .slider_buttons {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 298px;
+
+	}
+	.block_views_diplomas_block_2 .slider_buttons div.slider_right {
+		float: right;
+	}
+	.middle {
+		padding: 0;
+	}
+	.block_views_diplomas_block_2 {
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 640px) {
+	.view-reviews.view-display-id-block_3 .view-content .views-row {
+		width: 100%;
+	}
+	.block_views_news_block_4 .view-news.view-display-id-block_4 .views-row {
+		flex-basis: 70%;
+	}
+}
+@media (max-width: 460px) {
+	.block_drupal_package_block_gifts_main .field_inner_wrap_field_gifts_main .field-name-field-gifts-main > .field-items {
+		margin-right: 0;
+	}
+	.block_drupal_package_block_gifts_main .field_inner_wrap_field_gifts_main .field-name-field-gifts-main > .field-items > .field-item {
+		width: 100%;
+		margin-right: 0;
+	}
+	.block_views_news_block_4 .view-news.view-display-id-block_4 .views-row {
+		flex-basis: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
