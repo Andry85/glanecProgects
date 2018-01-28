@@ -3,7 +3,8 @@
 
 		// adaptive menu
         $('.header .region-header .block_system_main_menu .block_content > .menu,.header .region-header .block_content > .block_menu_header > .menu').slicknav({
-            label: ''
+            label: '',
+            easingOpen: "swing"
         });
 
 
@@ -56,6 +57,30 @@
 			    });
 
 			    $('.block_views_diplomas_block_2 .view-diplomas.view-display-id-block_2 .view-content .views-row .views-field-field-node-text .slider_buttons').prependTo('.block_views_diplomas_block_2 .view-diplomas.view-display-id-block_2 .view-content');
+
+			    $('.footer .block_drupal_package_block_contacts_footer .field-name-field-address p br').remove();
+
+			    $("<div class='footer-bottom'></div>").appendTo(".footer");
+
+			    $('.footer .block_drupal_package_block_contacts_footer .field_inner_wrap_field_links_soc .field-item:eq(0)').appendTo(".footer-bottom");
+			    $('.footer .block_drupal_package_block_contacts_footer .field_inner_wrap_field_links_soc .field-item:eq(0)').appendTo(".footer-bottom");
+			    $("<a class='footer-order' href='/services'>Заказать мероприятие</a>").appendTo(".footer-bottom");
+
+
+			   	$(".slicknav_btn").click(function(){
+				    if ($(this).hasClass('slicknav_open')) {
+			    		$('.header .block_search_form').hide();
+				   	} else {
+				   		$('.header .block_search_form').show();
+				   	}
+				});
+
+				$('.block_drupal_package_block_bg_about').parents('.content_top_region').addClass('content_top_region_about');
+
+				var pageName = $('.slicknav_nav ul li ul li a.active').text();
+				$("<span class='pageNameTitle'>"+ pageName +"</span>").prependTo(".not-front .header");
+				$('.block_drupal_package_block_leadership .field_inner_wrap_field_about_img').insertAfter('.block_drupal_package_block_leadership .field_inner_wrap_field_block_body');
+				
 
 			    
 		        
