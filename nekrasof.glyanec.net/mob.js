@@ -33,7 +33,7 @@
 
 				$('<div class="slider_buttons"><div class="slider_left"></div><div class="slider_right"></div></div>').appendTo('.block_views_clients_block_2');
 
-		       $('.block_views_clients_block_2 .slider_buttons .slider_right').livequery('click', function() {
+		        $('.block_views_clients_block_2 .slider_buttons .slider_right').livequery('click', function() {
 					$('.block_views_clients_block_2 .slick-arrow.slick-next').click();
 				});
 				$('.block_views_clients_block_2 .slider_buttons .slider_left').livequery('click', function() {
@@ -45,12 +45,19 @@
 			    });
 
 			    $('.block_drupal_package_block_gifts_main .field-name-dpb-title-field .field-item').wrapInner("<div class='accordBlockPresents'></div>");
+			    $(".block_views_clients_block_1 .block_title,.block_block_2 .block_title,.block_system_main .block_title").wrapInner("<div class='accordBlock'></div>");
 
 			    $('.block_drupal_package_block_gifts_main .field_inner_wrap_dpb_title_field').nextAll('div').wrapAll("<div class='presentsWrap'></div>");
 			    $('.accordBlock').click(function(){
 			    	$(this).toggleClass("active");
-		    		$(this).parents('.block').find('.block_content').slideToggle('slow');
+		    		$(this).parent('.block_title').next('.block_content').slideToggle('slow');
 			    });
+
+			    $('.block_views_events_block_3 .accordBlock').click(function(){
+			    	$('.block_views_events_block_3 .slick-arrow.slick-next').click();
+			    });
+
+
 			    $('.accordBlockPresents').click(function(){
 		    		$(this).parents('.block_content').find('.presentsWrap').slideToggle('slow');
 		    		$(this).toggleClass("active");
@@ -80,6 +87,33 @@
 				var pageName = $('.slicknav_nav ul li ul li a.active').text();
 				$("<span class='pageNameTitle'>"+ pageName +"</span>").prependTo(".not-front .header");
 				$('.block_drupal_package_block_leadership .field_inner_wrap_field_about_img').insertAfter('.block_drupal_package_block_leadership .field_inner_wrap_field_block_body');
+
+
+				$('.block_views_clients_block_1 .view-content').slick({
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					fade: true,
+					adaptiveHeight:true
+				});
+
+				$('<div class="slider_buttons"><div class="slider_left"></div><div class="slider_right"></div></div>').appendTo('.block_views_clients_block_1 .block_content');
+
+		        $('.block_views_clients_block_1 .slider_buttons .slider_right').livequery('click', function() {
+					$('.block_views_clients_block_1 .slick-arrow.slick-next').click();
+				});
+				$('.block_views_clients_block_1 .slider_buttons .slider_left').livequery('click', function() {
+					$('.block_views_clients_block_1 .slick-arrow.slick-prev').click();
+				});
+
+				$('.block_views_clients_block_1 .accordBlock').click(function(){
+			    	$('.block_views_clients_block_1 .slick-arrow.slick-next').click();
+			    });
+
+				
+
+
+
 				
 
 			    

@@ -157,16 +157,7 @@
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			fade: true,
-			adaptiveHeight:true,
-			responsive: [
-		    {
-		      breakpoint: 768,
-		      settings: {
-		        autoplay: true
-		      }
-		    }
-		  ]
-			
+			adaptiveHeight:true,		
 		})
 		$('.view-diplomas.view-display-id-block_2 .view-content').slick({
 			infinite: true,
