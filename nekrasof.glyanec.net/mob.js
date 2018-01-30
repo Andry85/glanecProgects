@@ -110,6 +110,24 @@
 			    	$('.block_views_clients_block_1 .slick-arrow.slick-next').click();
 			    });
 
+
+			    $('.block_views_press_category_block_1 .view-content').slick({
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					fade: true,
+					adaptiveHeight:true
+				});
+
+				$('<div class="slider_buttons"><div class="slider_left"></div><div class="slider_right"></div></div>').appendTo('.block_views_press_category_block_1 .block_content');
+
+		        $('.block_views_press_category_block_1 .slider_buttons .slider_right').livequery('click', function() {
+					$('.block_views_press_category_block_1 .slick-arrow.slick-next').click();
+				});
+				$('.block_views_press_category_block_1 .slider_buttons .slider_left').livequery('click', function() {
+					$('.block_views_press_category_block_1 .slick-arrow.slick-prev').click();
+				});
+
 				
 
 
