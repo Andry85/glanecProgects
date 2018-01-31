@@ -45,12 +45,16 @@
 			    });
 
 			    $('.block_drupal_package_block_gifts_main .field-name-dpb-title-field .field-item').wrapInner("<div class='accordBlockPresents'></div>");
-			    $(".block_views_clients_block_1 .block_title,.block_block_2 .block_title,.block_system_main .block_title").wrapInner("<div class='accordBlock'></div>");
+			    $(".block_views_clients_block_1 .block_title,.block_block_2 .block_title,.block_similar_artists .block_title").wrapInner("<div class='accordBlock'></div>");
 
 			    $('.block_drupal_package_block_gifts_main .field_inner_wrap_dpb_title_field').nextAll('div').wrapAll("<div class='presentsWrap'></div>");
 			    $('.accordBlock').click(function(){
 			    	$(this).toggleClass("active");
 		    		$(this).parent('.block_title').next('.block_content').slideToggle('slow');
+			    });
+
+			    $('.block_similar_artists .accordBlock').click(function(){
+			    	$(this).parent('.block_title').next('.view-artists').find('.view-content').slideToggle('slow');
 			    });
 
 			    $('.block_views_events_block_3 .accordBlock').click(function(){
@@ -127,6 +131,55 @@
 				$('.block_views_press_category_block_1 .slider_buttons .slider_left').livequery('click', function() {
 					$('.block_views_press_category_block_1 .slick-arrow.slick-prev').click();
 				});
+
+				$('.node-type-artists .content_top_region .page_title').prependTo('.node.node_artists .left_wrap');
+				$('<a class="node_artists_back" href="/services"></a>').prependTo('.node.node_artists .left_wrap');
+
+				var attrArtists = $('.node-type-artists').parent('html').attr('lang');
+				switch (attrArtists) {
+				  case 'ru':
+				    	$("<span class='pageNameTitle'>Заказ артистов, организация концертов</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
+				    break;
+				  case 'uk':
+						$("<span class='pageNameTitle'>Замовлення артистів, організація концертів</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
+				    break;
+				  case 'en':
+				  		$("<span class='pageNameTitle'>Order of artists, organization of concerts</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
+				    break;
+				}
+				
+				$('<div class="blockSeparator"></div>').insertAfter('.node.node_artists .right_wrap .info_artists .arrow');
+				$('#block-views-artists-block-2 .photoswipe-gallery .views-row').each(function(){
+			        $(this).removeAttr("style");
+			    });
+
+			    $('<div class="sliderArtist"></div>').prependTo('.block_views_artists_block_2 .view-content');
+			    $('#block-views-artists-block-2 .photoswipe-gallery .views-row a img').each(function(){
+			        $(this).parents('.block_views_artists_block_2 .view-content').find('.sliderArtist').append($(this));
+			    });
+
+			     $('.sliderArtist').slick({
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					fade: true,
+					adaptiveHeight:true
+				});
+
+				$('<div class="slider_buttons"><div class="slider_left"></div><div class="slider_right"></div></div>').appendTo('.sliderArtist');
+
+		        $('.sliderArtist .slider_buttons .slider_right').livequery('click', function() {
+					$('.sliderArtist .slick-arrow.slick-next').click();
+				});
+				$('.sliderArtist .slider_buttons .slider_left').livequery('click', function() {
+					$('.sliderArtist .slick-arrow.slick-prev').click();
+				});
+
+
+
+				
+							
+
 
 				
 

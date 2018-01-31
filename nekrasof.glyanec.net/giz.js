@@ -112,14 +112,16 @@
 				itemSelector: '.views-row',
 			});
 		});
-		$('.view-id-artists.view-display-id-block_2 .photoswipe-gallery').livequery(function(){
-			$(this).masonry({
-				itemSelector: '.views-row',
-				gutter: 30,
-				isAnimated: true
+		var wiwn = window.innerWidth;
+		if(wiwn > 767) { 
+			$('.view-id-artists.view-display-id-block_2 .photoswipe-gallery').livequery(function(){
+				$(this).masonry({
+					itemSelector: '.views-row',
+					gutter: 30,
+					isAnimated: true
+				});
 			});
-		});
-
+		}
 		$('.youtube').click(function(){
 			$vid = $(this).attr('data-id');
 			$(this).find('img').remove();
