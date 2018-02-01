@@ -75,7 +75,23 @@
 
 			    $('.footer .block_drupal_package_block_contacts_footer .field_inner_wrap_field_links_soc .field-item:eq(0)').appendTo(".footer-bottom");
 			    $('.footer .block_drupal_package_block_contacts_footer .field_inner_wrap_field_links_soc .field-item:eq(0)').appendTo(".footer-bottom");
-			    $("<a class='footer-order' href='/services'>Заказать мероприятие</a>").appendTo(".footer-bottom");
+			   
+
+			    var orderList = $('body').parent('html').attr('lang');
+				switch (orderList) {
+				  case 'ru':
+				    	$("<a class='footer-order' href='services'>Заказать мероприятие</a>").appendTo(".footer-bottom");
+				    break;
+				  case 'uk':
+						$("<a class='footer-order' href='services'>Замовити захід</a>").appendTo(".footer-bottom");
+				    break;
+				  case 'en':
+				  		$("<a class='footer-order' href='services'>Order an event</a>").appendTo(".footer-bottom");
+				    break;
+				}
+
+
+			   
 
 
 			   	$(".slicknav_btn").click(function(){
@@ -88,7 +104,7 @@
 
 				$('.block_drupal_package_block_bg_about').parents('.content_top_region').addClass('content_top_region_about');
 
-				var pageName = $('.slicknav_nav ul li ul li a.active').text();
+				var pageName = $('.slicknav_nav ul li ul li a.active,.slicknav_nav li ul li.parent_link > a.active').text();
 				$("<span class='pageNameTitle'>"+ pageName +"</span>").prependTo(".not-front .header");
 				$('.block_drupal_package_block_leadership .field_inner_wrap_field_about_img').insertAfter('.block_drupal_package_block_leadership .field_inner_wrap_field_block_body');
 
@@ -133,7 +149,7 @@
 				});
 
 				$('.node-type-artists .content_top_region .page_title').prependTo('.node.node_artists .left_wrap');
-				$('<a class="node_artists_back" href="/services"></a>').prependTo('.node.node_artists .left_wrap');
+				$('<a class="node_artists_back" href="../services"></a>').prependTo('.node.node_artists .left_wrap');
 
 				var attrArtists = $('.node-type-artists').parent('html').attr('lang');
 				switch (attrArtists) {
@@ -176,14 +192,37 @@
 				});
 
 
-
 				
 							
+				$('.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_contacts_phone').insertAfter('.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_social_links2');
+				$('.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_viber').insertBefore('.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_skype');
+				$('.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_contacts_address p br').remove();
+
+				$('<div class="singerPhoto"></div>').appendTo('.block_drupal_package_block_about_careers_text');
+
+				$('<img class="careersPhoto" src="/sites/all/themes/newtheme/images/bg_block.png"/>').appendTo('.block_drupal_package_block_about_find_careers .block_content');
+
+				$('<a class="node_artists_back" href="/careers"></a>').insertBefore('.node-type-careers .content_top_region .page_title');
+
+
+				var vacanciesList = $('.node-type-careers').parent('html').attr('lang');
+				switch (vacanciesList) {
+				  case 'ru':
+				    	$("<span class='pageNameTitle'>Вакансии</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
+				    break;
+				  case 'uk':
+						$("<span class='pageNameTitle'>Вакансії</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
+				    break;
+				  case 'en':
+				  		$("<span class='pageNameTitle'>Careers</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
+				    break;
+				}
+
 
 
 				
 
-
+			
 
 				
 

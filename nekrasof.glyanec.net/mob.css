@@ -109,6 +109,9 @@
 	color: #fff;
 	font-weight: 600;
 }
+.slicknav_nav li ul li.parent_link > a.active {
+	color: #ee3324;
+}
 .slicknav_nav li ul li.parent_link .child_wrap {
 	padding-top: 18px;
 	padding-bottom: 0px;
@@ -123,6 +126,10 @@
 	font-weight: 600;
 	text-decoration: none;
 }
+.slicknav_nav li ul li.parent_link > a a.active {
+	color: #ee3324;
+}
+
 .slicknav_nav > li.group_item:first-child {
 	padding-top: 7px;
 }
@@ -288,10 +295,24 @@
 	.block_views_news_block_3,
 	.node-type-artists .node_info,
 	.block_views_artists_block_2,
-	.block_summary_send
+	.block_summary_send,
+	.block_drupal_package_block_contacts,
+	.block_drupal_package_block_about_careers_text,
+	.view-careers.view-display-id-page_1,
+	.block_drupal_package_block_about_find_careers,
+	.node-type-careers .content_top_region,
+	.node.node_careers .field-name-body,
+	.node.node_careers .info_block
 	 {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.block_drupal_package_block_contacts .field_inner_wrap_field_team .field-name-field-team {
+		margin-right: 0;
+	}
+	.block_drupal_package_block_contacts .field_inner_wrap_field_team .field-name-field-team > .field-items > .field-item {
+		margin-right: 0;
+		padding-right: 20px;
 	}
 
 	
@@ -340,6 +361,9 @@
 	}
 	.block_views_artists_block_2 .view-content {
 		float: none;
+	}
+	.page-careers .content_top_region .contacts_field {
+		bottom: 50px;
 	}
 
 }
@@ -416,6 +440,9 @@
 	#block-views-artists-block-2 .base_left_img {
 		right: 0;
 		left: auto!important;
+	}
+	.page-node-1 .content_top_region {
+		height: 337px;
 	}
 	
 	
@@ -610,6 +637,39 @@
 	#block-views-artists-block-2 .photoswipe-gallery {
 		width: 660px!important;
 	}
+	.not-front.page-node-1 .header .logo_wrapper {
+		margin-left: 0;
+		left: 10px;
+	}
+	.block_drupal_package_block_contacts .field_inner_wrap_field_team .field-name-field-team-name,
+	.block_drupal_package_block_contacts .field-label,
+	.block_drupal_package_block_contacts .field_inner_wrap_field_team .field-name-field-team-phone
+	{
+		font-size: 20px;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap {
+		font-size: 14px;
+		margin-top: -10px;
+	}
+	.view-careers.view-display-id-page_1 .view-content .views-row {
+		padding: 15px;
+		word-break: break-all;
+	}
+	.block_drupal_package_block_about_find_careers .field-name-dpb-title-field {
+		font-size: 56px;
+		max-width: 450px;
+	}
+	.block_drupal_package_block_about_find_careers .field-name-field-block-body {
+		max-width: 450px;
+	}
+	.block_drupal_package_block_about_find_careers {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+
+	 
+
 
 }
 @media (max-width: 930px) { 
@@ -1148,8 +1208,8 @@
 		font-weight: 600;
 		width: 220px;
 		margin-top: -3px;
-		height: 42px;
 		overflow: hidden;
+		max-height: 42px;
 
 	}
 	.block_drupal_package_block_about .field-name-dpb-title-field {
@@ -1611,9 +1671,245 @@
 	.region-content .block .block_similar_artists .block_title {
 		margin: 0;
 	}
-
-	
-
+	.page-node-1 .content_top_region {
+		display: none;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block {
+		width: 100%;
+	}
+	.block_drupal_package_block_contacts .field_inner_wrap_field_team {
+		width: 100%;
+	}
+	.block_drupal_package_block_contacts .field_inner_wrap_field_contacts_img img {
+		width: 100%;
+	}
+	.block_drupal_package_block_contacts {
+		padding: 0;
+	}
+	.block_drupal_package_block_contacts .field_inner_wrap_field_team .field-name-field-team-name,
+	.block_drupal_package_block_contacts .field-label,
+	.block_drupal_package_block_contacts .field_inner_wrap_field_team .field-name-field-team-phone
+	{
+		font-size: 24px;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap {
+		font-size: 16px;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_contacts_address {
+		padding-bottom: 25px;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_contacts_address .field-label {
+		margin-bottom: 19px;
+		margin-top: 23px;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_social_links2 {
+		padding-bottom: 25px;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_social_links2 .field-label {
+		margin-bottom: 4px;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_contacts_phone {
+		padding-bottom: 40px;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_viber {
+		padding-bottom: 40px;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_viber .field-items {
+		display: inline-block;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_skype {
+		padding-bottom: 28px;
+	}
+	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_skype .field-items {
+		display: inline-block;
+	}
+	.block_drupal_package_block_contacts .field_inner_wrap_field_team .field-name-field-team > .field-items > .field-item {
+		margin: 0;
+		padding: 29px 0 24px 0;
+		width: 100%;
+		max-width: none;
+		border-top: 1px solid #dfdfdf;
+		text-align: center;
+	}
+	.block_drupal_package_block_contacts .field_inner_wrap_field_team .field-name-field-team-photo img {
+		margin: 0 auto;
+	}
+	.block_drupal_package_block_contacts + div {
+		display: none;
+	}
+	.block_drupal_package_block_contacts .field_inner_wrap_field_team .field-name-field-team-body {
+		max-width: 280px;
+		margin: 0 auto;
+	}
+	.page-careers .content_top_region {
+		display: none;
+	}
+	.block_drupal_package_block_about_careers_text {
+		padding: 21px 10px 0 10px;
+	}
+	.block_drupal_package_block_about_careers_text .field-name-dpb-title-field {
+		font-size: 24px;
+		text-align: left;
+		margin: 0 0 20px 0;
+	}
+	.block_drupal_package_block_about_careers_text .field-name-field-block-body {
+		text-align: left;
+	}
+	.view-careers.view-display-id-page_1::after {
+		display: none;
+	}
+	.singerPhoto {
+		background: url(/sites/all/themes/newtheme/images/car_img.png) no-repeat;
+		width: 300px;
+		height: 227px;
+		margin: 20px auto 0 auto;
+		background-size: cover;
+	}
+	.block_drupal_package_block_about_careers_text {
+		margin: 0;
+	}
+	.view-careers.view-display-id-page_1 {
+		padding-top: 10px;
+		padding-bottom: 0;
+	}
+	.view-careers.view-display-id-page_1 .view-content .views-row:nth-child(3n+1),
+	.view-careers.view-display-id-page_1 .view-content .views-row:nth-child(6n+1), 
+	.view-careers.view-display-id-page_1 .view-content .views-row:nth-child(6n+2), 
+	.view-careers.view-display-id-page_1 .view-content .views-row:nth-child(6n+3),
+	.view-careers.view-display-id-page_1 .view-content .views-row:nth-child(3n+2)
+	 {
+		top: 0;
+	}
+	.view-careers.view-display-id-page_1 .view-content .views-row {
+		width: 100%;
+		margin-bottom: 1px;
+		text-align: center;
+		padding: 26px 25px 30px 25px;
+		box-shadow: none;
+	}
+	.view-careers.view-display-id-page_1 .view-content .views-row .views-field-title-field a {
+		font-size: 16px;
+		line-height: 1.5;
+		margin-bottom: 16px;
+	}
+	.view-careers.view-display-id-page_1 .view-content .views-row .views-field-body {
+		font-size: 14px;
+		line-height: 1.2;
+		margin-bottom: 24px;
+	}
+	.view-careers .item-list .pager {
+		text-align: center;
+		margin: 0;
+		padding: 0 0 25px 0;
+	}
+	.view-careers.view-display-id-page_1 .view-content {
+		margin: 0 0 24px 0;
+	}
+	.block_drupal_package_block_about_find_careers.block-drupal-package-block .field-name-dpb-title-field {
+		font-weight: 600;
+		font-size: 24px;
+		margin: 0 0 20px 0;
+	}
+	.block_drupal_package_block_about_find_careers .field-name-field-block-body {
+		font-size: 16px;
+		line-height: 1.6;
+		margin-bottom: 22px;
+	}
+	.block_drupal_package_block_about_find_careers::after {
+		display: none;
+	}
+	.careersPhoto {
+	    width: 100%;
+	    display: block;
+	}
+	.block_drupal_package_block_about_find_careers {
+		min-height: inherit; 
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+	.block_drupal_package_block_about_find_careers .field-name-field-btn-block .field-item {
+		margin: 0 0 20px 40px;
+	}
+	.node-type-careers .content_top_region {
+		background: #111127!important;
+		min-height: 196px;
+		padding: 31px 10px 25px 10px;
+		margin: 0;
+	}
+	.node-type-careers .content_top_region .order_btn {
+		display: none;
+	}
+	.node-type-careers .content_top_region .top_inner_content {
+		display: block;
+	}
+	.node-type-careers .content_top_region .top_inner_content .main_breadcrumbs {
+		display: none;
+	}
+	.node-type-careers .content_top_region .page_title {
+		font-size: 24px;
+		font-weight: 400;
+		max-width: 300px;
+		margin: 0 auto;
+		padding: 25px 0 0 0;
+		line-height: 1.4;
+	}
+	.node.node_careers .field-name-body {
+		text-align: left;
+		padding: 24px 10px 0 10px;
+		margin-bottom: 17px;
+	}
+	.node.node_careers .field-name-body h2 {
+		font-size: 24px;
+		margin: 0 0 27px 0;
+	}
+	.node.node_careers .info_block {
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+	.node.node_careers .info_block .field_inner_node_process:first-child {
+		padding: 0;
+	}
+	.node.node_careers .info_block .field_inner_node_process {
+		width: 100%;
+	}
+	.node.node_careers .info_block .field_inner_node_process .field-label {
+		text-align: center;
+		margin-bottom: 23px;
+	}
+	.node.node_careers .info_block .field_inner_node_process .field-item {
+		margin-bottom: 24px;
+	}
+	.node.node_careers .info_block .field_inner_node_process {
+		padding-bottom: 16px!important;
+	}
+	#cbh_mobile_widget_wrapper #cbh_mobile_phone_wrapper {
+		display: none;
+	}
+	.block_summary_send .block-webform .webform-client-form .form-item.webform-component-prikrepit-fayl-rezyume {
+		text-align: center;
+	}
+	.block_summary_send .block-webform .webform-client-form .form-item.webform-component-prikrepit-fayl-rezyume label {
+		padding: 0;
+		margin: 0 0 10px 0;
+	}
+	.block_summary_send .block-webform .webform-client-form .webform-component-managed_file .my_style_button_upload_file {
+		display: inline-block;
+	}
+	.block_summary_send .block-webform .webform-client-form .form-actions {
+		text-align: center;
+	    display: block;
+	    width: 145px;
+	    margin: 0 auto;
+	}
+	.block_summary_send .block-webform .webform-client-form .webform-component-managed_file .description {
+		margin: -20px 0 0 0;
+	}
 
 
 
@@ -1630,6 +1926,7 @@
 		margin-right: 5px;
 		margin-left: 5px;
 	}
+
 }
 @media (max-width: 460px) {
 	.block_drupal_package_block_gifts_main .field_inner_wrap_field_gifts_main .field-name-field-gifts-main > .field-items {
