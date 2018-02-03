@@ -98,21 +98,24 @@
 		// 	itemSelector: '.views-row',
 		// 	horizontalOrder: true
 		// });
-		$('.view-diplomas.view-display-id-page_1 .view-content').livequery(function(){
-			var max_h = 0;
-			$(this).find('.views-row').each(function(){
-				var row_h = $(this).innerHeight()-50;
-				if(row_h > max_h) max_h = row_h;
-			});
-			$(this).find('.views-row').each(function(){
-				var del = $(this).data('del');
-				$(this).height(max_h/(del ? del : 1));
-			});
-			$(this).masonry({
-				itemSelector: '.views-row',
-			});
-		});
+
 		var wiwn = window.innerWidth;
+		if(wiwn > 991) { 
+			$('.view-diplomas.view-display-id-page_1 .view-content').livequery(function(){
+				var max_h = 0;
+				$(this).find('.views-row').each(function(){
+					var row_h = $(this).innerHeight()-50;
+					if(row_h > max_h) max_h = row_h;
+				});
+				$(this).find('.views-row').each(function(){
+					var del = $(this).data('del');
+					$(this).height(max_h/(del ? del : 1));
+				});
+				$(this).masonry({
+					itemSelector: '.views-row',
+				});
+			});
+		}
 		if(wiwn > 767) { 
 			$('.view-id-artists.view-display-id-block_2 .photoswipe-gallery').livequery(function(){
 				$(this).masonry({
@@ -152,7 +155,23 @@
 		$('.view-offers.view-display-id-block_1 .view-content, .view-offers.view-display-id-block_2 .view-content').slick({
 			infinite: true,
 			slidesToShow: 4,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 2,
+		        autoplay: true
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        autoplay: true
+		      }
+		    }
+		  ]
 		})
 		$('.block_views_events_block_3 .view-events.view-display-id-block_3 .view-content').slick({
 			infinite: true,

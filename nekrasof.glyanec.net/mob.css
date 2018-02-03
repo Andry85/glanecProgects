@@ -161,6 +161,12 @@
 	.block_views_clients_block_1 .view-content, .block_views_clients_block_2 .view-content {
 		margin-right: 0;
 	}
+	.block_views_offers_block_1
+	 {
+		padding-left: 75px;
+		padding-right: 75px;
+	}
+
 }
 @media (max-width: 1395px) { 
 	.not-front .header .logo_wrapper {
@@ -302,7 +308,12 @@
 	.block_drupal_package_block_about_find_careers,
 	.node-type-careers .content_top_region,
 	.node.node_careers .field-name-body,
-	.node.node_careers .info_block
+	.node.node_careers .info_block,
+	.block_drupal_package_block_services_order_text,
+	.block_drupal_package_block_services_order_text_2,
+	.block_drupal_package_block_about_diplomas_text,
+	.view-diplomas.view-display-id-page_1,
+	.block_drupal_package_block_about_diplomas_video
 	 {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -337,12 +348,14 @@
 
 
 	.block_views_artists_block_1 .views-row .views-field-field-node-preview,
-	.block_similar_artists .views-row .views-field-field-node-preview
+	.block_similar_artists .views-row .views-field-field-node-preview,
+	.block_views_related_services_block_2 .views-row .views-field-field-tax-main-photo
 	 {
 		width: 50%;
 	}
 	.block_views_artists_block_1 .views-row .views-field-field-node-preview img,
-	.block_similar_artists .views-row .views-field-field-node-preview img {
+	.block_similar_artists .views-row .views-field-field-node-preview img,
+	.block_views_related_services_block_2 .views-row .views-field-field-tax-main-photo img {
 		width: 100%;
 	}
 	
@@ -362,8 +375,14 @@
 	.block_views_artists_block_2 .view-content {
 		float: none;
 	}
-	.page-careers .content_top_region .contacts_field {
+	.page-careers .content_top_region .contacts_field,
+	.page-services-order .content_top_region .contacts_field,
+	.page-diplomas .content_top_region .contacts_field
+	 {
 		bottom: 50px;
+	}
+	.view-offers.view-display-id-block_1 .view-content .views-row .views-field-title-field a {
+		height: auto!important;
 	}
 
 }
@@ -415,12 +434,14 @@
 		width: 33%;
 	}
 	.block_views_artists_block_1 .views-row .views-field-field-node-text,
-	.block_similar_artists .views-row .views-field-field-node-text
+	.block_similar_artists .views-row .views-field-field-node-text,
+	.block_views_related_services_block_2 .views-row .views-field-description-field
 	 {
 		padding-right: 20px;
 	}
 	.block_views_artists_block_1 .views-row.views-row-odd:nth-child(3n+3) .views-field-field-node-text,
-	.block_similar_artists .views-row.views-row-odd:nth-child(3n+3) .views-field-field-node-text
+	.block_similar_artists .views-row.views-row-odd:nth-child(3n+3) .views-field-field-node-text,
+	.block_views_related_services_block_2 .views-row-odd:nth-child(3n+3) .views-field-description-field
 	 {
 		padding-left: 20px;
 	}
@@ -443,6 +464,12 @@
 	}
 	.page-node-1 .content_top_region {
 		height: 337px;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-field_category_tid .form-radios .form-item label {
+		padding: 0 20px;
+	}
+	.block_drupal_package_block_services_order_text_2 .field_inner_wrap_field_block_photo {
+		width: 40%;
 	}
 	
 	
@@ -475,6 +502,7 @@
 	.block_drupal_package_block_about .field_inner_wrap_field_about_img::after {
 		display: none;
 	}
+
 }
 @media (max-width: 1045px) { 
 	.header .region-header .block_block_1 .menu .parent_link > a {
@@ -611,7 +639,8 @@
 		margin-bottom: 30px;
 	}
 	.block_views_artists_block_1 .views-row .views-field-field-node-text,
-	.block_similar_artists .views-row .views-field-field-node-text
+	.block_similar_artists .views-row .views-field-field-node-text,
+	.block_views_related_services_block_2 .views-row .views-field-description-field
 	 {
 		display: none;
 	}
@@ -666,6 +695,78 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
+	.view-artists.view-display-id-page_1 .view-content .views-row {
+		width: 50%;
+	}
+	.view-artists.view-display-id-page_1 .view-content .views-row .views-field-field-node-preview {
+		width: 50%;
+	}
+	.view-artists.view-display-id-page_1 .view-content .views-row .views-field-field-node-preview img {
+		width: 100%;
+	}
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-3 .views-field-field-node-preview {
+		float: right;
+	}
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-3 .views-field-title-field {
+		text-align: right;
+	    overflow: hidden;
+	    display: block;
+	    margin: 0;
+	}
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-5 .views-field-field-node-preview,
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-6 .views-field-field-node-preview
+	 {
+		float: none;
+	}
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-5 .views-field-title-field,
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-6 .views-field-title-field
+	 {
+		text-align: left;
+    	display: inline-block;
+    	margin: 10px 0 0 -10px;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value .views-widget .form-item {
+		max-width: 500px;
+		margin-left: 15px;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-field_category_tid .form-radios .form-item label {
+		padding: 0 15px;
+		font-size: 20px;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value .views-widget {
+		text-align: left;
+	}
+	.view-artists.view-display-id-page_1 {
+		background: #111127 url(../images/mobimg/content_top_region_about-bg.png) repeat!important;
+	}
+	.block_views_offers_block_1
+	 {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.block_views_offers_block_1 .slick-arrow.slick-prev {
+		left: -15px;
+	}
+	.block_views_offers_block_1 .slick-arrow.slick-next {
+		right: -15px;
+	}
+	.view-diplomas.view-display-id-page_1 .view-content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.view-diplomas.view-display-id-page_1 .view-content .views-row {
+		width: 33.3%;
+	}
+	.view-diplomas.view-display-id-page_1 .view-content .views-row.views-row-0,
+	.view-diplomas.view-display-id-page_1 .view-content .views-row.views-row-2, 
+	.view-diplomas.view-display-id-page_1 .view-content .views-row.views-row-4,
+	.view-diplomas.view-display-id-page_1 .view-content .views-row.views-row-1, 
+	.view-diplomas.view-display-id-page_1 .view-content .views-row.views-row-5,
+	.view-diplomas.view-display-id-page_1 .view-content .views-row.views-row-7 {
+		z-index: 0;
+	}
+
+
 
 
 	 
@@ -1286,30 +1387,37 @@
 		display: block;
 	}
 	.block_views_artists_block_1 .views-row,
-	.block_similar_artists .views-row {
+	.block_similar_artists .views-row,
+	.block_views_related_services_block_2 .views-row
+	 {
 		width: 100%;
 	}
 	.block_views_artists_block_1 .views-row:nth-child(2n+1) .views-field-field-node-preview,
-	.block_similar_artists .views-row:nth-child(2n+1) .views-field-field-node-preview
+	.block_similar_artists .views-row:nth-child(2n+1) .views-field-field-node-preview,
+	.block_views_related_services_block_2 .views-row:nth-child(2n+1) .views-field-field-tax-main-photo
 	 {
 		float: left!important;
 		margin: 0 14px 0 0!important;
 	}
 	.block_views_artists_block_1 .views-row:nth-child(2n) .views-field-field-node-preview,
-	.block_similar_artists .views-row:nth-child(2n) .views-field-field-node-preview
+	.block_similar_artists .views-row:nth-child(2n) .views-field-field-node-preview,
+	.block_views_related_services_block_2 .views-row:nth-child(2n) .views-field-field-tax-main-photo
+
 	 {
 		float: right!important;
 		margin: 0 0 0 14px!important;
 	}
 	.block_views_artists_block_1 .views-row.views-row:nth-child(2n+1) .views-field-title-field,
-	.block_similar_artists .views-row.views-row:nth-child(2n+1) .views-field-title-field
+	.block_similar_artists .views-row.views-row:nth-child(2n+1) .views-field-title-field,
+	.block_views_related_services_block_2 .views-row:nth-child(2n+1) .views-field-name-field
 	 {
 		text-align: left!important;
-		max-width: 100px;
 		padding: 27px 0 0 0!important;
+		word-wrap: break-word;
 	}
 	.block_views_artists_block_1 .views-row.views-row:nth-child(2n) .views-field-title-field,
-	.block_similar_artists .views-row.views-row:nth-child(2n) .views-field-title-field
+	.block_similar_artists .views-row.views-row:nth-child(2n) .views-field-title-field,
+	.block_views_related_services_block_2 .views-row:nth-child(2n) .views-field-name-field
 	 {
 		text-align: right!important;
 		max-width: 100px;
@@ -1910,6 +2018,199 @@
 	.block_summary_send .block-webform .webform-client-form .webform-component-managed_file .description {
 		margin: -20px 0 0 0;
 	}
+	.page-services-order .content_top_region {
+		display: none;
+	}
+	.block_drupal_package_block_services_order_text.block-drupal-package-block .field-name-dpb-title-field,
+	.block_drupal_package_block_about_diplomas_text .field-name-dpb-title-field {
+		text-align: left;
+		font-size: 24px;
+		margin: 0 0 23px 0;
+		line-height: 1.333;
+	}
+	.block_drupal_package_block_services_order_text {
+		padding-top: 23px;
+		padding-bottom: 44px;
+		margin: 0;
+	}
+	.block_drupal_package_block_services_order_text .field-name-field-block-body,
+	.block_drupal_package_block_about_diplomas_text .field-name-field-block-body {
+		text-align: left;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-field_category_tid .form-radios {
+		display: block;
+		text-align: center;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-field_category_tid .form-radios .form-item label {
+		box-shadow: 0 -3px 15px rgba(19, 41, 68, 0.12);
+	}
+	.view-artists.view-display-id-page_1 .view-content {
+		padding: 0;
+	}
+	.view-artists.view-display-id-page_1 .view-content .views-row {
+		width: 100%;
+	}
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-2 .views-field-field-node-preview,
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-6 .views-field-field-node-preview {
+		float: right;
+	}
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-2 .views-field-title-field,
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-6 .views-field-title-field
+	 {
+		text-align: right;
+	    overflow: hidden;
+	    display: block;
+	    margin: 0;
+	}
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-3 .views-field-field-node-preview
+	 {
+		float: none;
+	}
+	.view-artists.view-display-id-page_1 .view-content .views-row.views-row-3 .views-field-title-field
+	 {
+		text-align: left;
+    	display: inline-block;
+    	margin: 10px 0 0 -10px;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value .views-widget .form-item {
+		margin: 0;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value .field-suffix {
+		position: static;
+		width: 100%;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value {
+		bottom: 0px;
+		padding: 10px;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value .field-suffix .submit_search {
+		margin-top: 10px;
+		width: 100%;
+
+	}
+	.view-artists.view-display-id-page_1 {
+		padding-bottom: 130px;
+	}
+	.view-artists.view-display-id-page_1 .pager_my_ui {
+		padding-top: 30px;
+		padding-bottom: 17px;
+		margin: 0 5px;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value .views-widget .form-item {
+		max-width: none;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value .views-widget .form-item label {
+		white-space: nowrap;
+    	overflow: hidden; 
+    	text-overflow: ellipsis; 
+    	width: 100%;
+	}
+	.block_drupal_package_block_services_order_text_2 {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.block-drupal-package-block.block_drupal_package_block_services_order_text_2 .field-name-dpb-title-field {
+		text-align: left;
+		font-size: 16px;
+		margin: 0;
+		padding: 20px 0;
+		line-height: 24px;
+
+	}
+	.block_drupal_package_block_services_order_text_2 .field_inner_wrap_field_block_photo {
+		display: none;
+	}
+	.block_drupal_package_block_services_order_text_2 .field_inner_wrap_field_benefits .field-name-field-benefits > .field-items > .field-item {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.block_drupal_package_block_services_order_text_2 .field_inner_wrap_field_benefits {
+		padding: 9px 0 2px 0;
+	}
+	.block_views_offers_block_1 {
+		padding: 0;
+	}
+	.region-content .block.block_views_offers_block_1 .block_title {
+		margin: 0;
+	}
+	.block_views_offers_block_1 .block_content {
+		display: none;
+	}
+	.region-content .block.block_views_related_services_block_2 .block_title {
+		margin: 0;
+	}
+	.block_views_related_services_block_2 {
+		padding: 0;
+	}
+	.block_views_related_services_block_2 .view-content {
+		margin: 0;
+	}
+	.block_views_related_services_block_2 .block_content {
+		display: none;
+	}
+	.block_views_offers_block_1 .accordBlock,
+	.block_views_related_services_block_2 .accordBlock {
+		font-size: 20px;
+	}
+	.page-diplomas .content_top_region {
+		display: none;
+	}
+	.block_drupal_package_block_about_diplomas_text {
+		padding-top: 23px;
+	    padding-bottom: 44px;
+	    margin: 0;
+	}
+	.block_drupal_package_block_about_diplomas_text .field-name-field-block-body p:last-child {
+		margin: 0;
+	}
+	.view-diplomas.view-display-id-page_1 .view-content .views-row {
+		width: 50%;
+	}
+	.view-diplomas.view-display-id-page_1 .view-content {
+		display: none;
+	}
+	.view-diplomas.view-display-id-page_1 .view-content .item-list {
+		margin-top: 25px;
+	}
+	.view-diplomas.view-display-id-page_1 {
+		padding: 0;
+	}
+	.view-diplomas.view-display-id-page_1 .view-header {
+		margin: 0;
+	}
+	.view-diplomas.view-display-id-page_1 .view-content {
+		padding-bottom: 55px;
+	}
+	.block_drupal_package_block_about_diplomas_video {
+		padding-top: 17px;
+		padding-bottom: 17px;
+	}
+	.block_drupal_package_block_about_diplomas_video .field-name-dpb-title-field {
+		text-align: left;
+		font-size: 24px;
+		margin: 0 0 23px 0;
+		line-height: 1.333;
+	}
+	.block_drupal_package_block_about_diplomas_video .field-name-field-youtube iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%!important;
+	}
+	.block_drupal_package_block_about_diplomas_video .field-name-field-youtube {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		height: 0;
+	}
+	.block_drupal_package_block_about_diplomas_video .field-name-field-address {
+		text-align: left;
+		margin: 0;
+		padding: 15px 0 0 0;
+	}
+	.block_drupal_package_block_about_diplomas_video .field-name-field-address p {
+		margin: 0;
+	}
+
 
 
 
@@ -1943,5 +2244,9 @@
 	}
 	.block_views_diplomas_block_1 .view-content .views-row {
 		flex-basis: 100%;
+	}
+	.view-diplomas.view-display-id-page_1 .view-content .views-row {
+		width: 100%;
+		float: none;
 	}
 }

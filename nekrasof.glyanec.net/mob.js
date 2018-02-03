@@ -13,6 +13,7 @@
 	        var wiw = window.innerWidth;
 	        if(wiw < 992) {
  				$('.block_drupal_package_block_about_main .field_inner_wrap_field_about_img').insertAfter('.block_drupal_package_block_about_main .field_inner_wrap_field_about_main_link');
+ 				$('.view-diplomas.view-display-id-page_1 .view-content .views-row.not_bg').hide();
 	        }
 	        if( (wiw < 992) && (wiw > 767) ) {
  				$('.block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_dpb_title_field').insertBefore('.block_views_diplomas_block_2 .block_drupal_package_block_diplomas_main .field_inner_wrap_field_contacts_img');
@@ -40,7 +41,7 @@
 					$('.block_views_clients_block_2 .slick-arrow.slick-prev').click();
 				});
 
-				$(".sidebar-first .middle_after_bottom .middle_inner .block .block_title").each(function(){
+				$(".sidebar-first .middle_after_bottom .middle_inner .block .block_title,.block_views_offers_block_1 .block_title,.block_views_related_services_block_2 .block_title").each(function(){
 			        $(this).wrapInner("<div class='accordBlock'></div>");
 			    });
 
@@ -59,6 +60,10 @@
 
 			    $('.block_views_events_block_3 .accordBlock').click(function(){
 			    	$('.block_views_events_block_3 .slick-arrow.slick-next').click();
+			    });
+
+			    $('.block_views_offers_block_1 .accordBlock').click(function(){
+			    	$('.block_views_offers_block_1 .slick-arrow.slick-next').click();
 			    });
 
 
@@ -205,6 +210,8 @@
 				$('<a class="node_artists_back" href="/careers"></a>').insertBefore('.node-type-careers .content_top_region .page_title');
 
 
+
+
 				var vacanciesList = $('.node-type-careers').parent('html').attr('lang');
 				switch (vacanciesList) {
 				  case 'ru':
@@ -218,11 +225,20 @@
 				    break;
 				}
 
+				$(".view-diplomas.view-display-id-page_1 .view-header").each(function(){
+			        $(this).wrapInner("<div class='accordBlock'></div>");
+			    });
+			    $('.view-diplomas.view-display-id-page_1 .accordBlock').click(function(){
+			    	$(this).toggleClass("active");
+		    		$(this).parent('.view-header').next('.view-content').slideToggle('slow');
+			    });
+
+			    $(".view-diplomas.view-display-id-page_1 .item-list").appendTo('.view-diplomas.view-display-id-page_1 .view-content');
 
 
-				
+			    
 
-			
+
 
 				
 
