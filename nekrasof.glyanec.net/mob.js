@@ -174,9 +174,9 @@
 			        $(this).removeAttr("style");
 			    });
 
-			    $('<div class="sliderArtist"></div>').prependTo('.block_views_artists_block_2 .view-content');
-			    $('#block-views-artists-block-2 .photoswipe-gallery .views-row a img').each(function(){
-			        $(this).parents('.block_views_artists_block_2 .view-content').find('.sliderArtist').append($(this));
+			    $('<div class="sliderArtist"></div>').prependTo('.block_views_artists_block_2 .view-content,.block_drupal_package_block_photo_services .view-content,.block_drupal_package_block_photo_related_services .view-content');
+			    $('#block-views-artists-block-2 .photoswipe-gallery .views-row a img,.block_drupal_package_block_photo_services .photoswipe-gallery .views-row a img,.block_drupal_package_block_photo_related_services .photoswipe-gallery .views-row a img').each(function(){
+			        $(this).parents('.block_views_artists_block_2 .view-content,.block_drupal_package_block_photo_services .view-content,.block_drupal_package_block_photo_related_services .view-content').find('.sliderArtist').append($(this));
 			    });
 
 			     $('.sliderArtist').slick({
