@@ -147,10 +147,31 @@
 			dots:true
 		})
 
-		$('.view-reviews.view-display-id-block_1 .view-content, .view-reviews.view-display-id-block_2 .view-content, .view-reviews.view-display-id-block_4 .view-content, .view-reviews.view-display-id-block_5 .view-content').slick({
+		$('.view-reviews.view-display-id-block_1 .view-content, .view-reviews.view-display-id-block_2 .view-content, .view-reviews.view-display-id-block_5 .view-content').slick({
 			infinite: true,
 			slidesToShow: 4,
 			slidesToScroll: 1
+		})
+		$('.view-reviews.view-display-id-block_4 .view-content').slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			responsive: [
+		    {
+		      breakpoint: 992,
+		      settings: {
+		        slidesToShow: 2,
+		        autoplay: true
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        autoplay: true
+		      }
+		    }
+		  ]
 		})
 		$('.view-offers.view-display-id-block_1 .view-content, .view-offers.view-display-id-block_2 .view-content').slick({
 			infinite: true,

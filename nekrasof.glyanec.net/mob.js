@@ -41,7 +41,7 @@
 					$('.block_views_clients_block_2 .slick-arrow.slick-prev').click();
 				});
 
-				$(".sidebar-first .middle_after_bottom .middle_inner .block .block_title,.block_views_offers_block_1 .block_title,.block_views_related_services_block_2 .block_title").each(function(){
+				$(".sidebar-first .middle_after_bottom .middle_inner .block .block_title,.block_views_offers_block_1 .block_title,.block_views_related_services_block_2 .block_title,.block_views_reviews_block_4 .block_title").each(function(){
 			        $(this).wrapInner("<div class='accordBlock'></div>");
 			    });
 
@@ -65,6 +65,14 @@
 			    $('.block_views_offers_block_1 .accordBlock').click(function(){
 			    	$('.block_views_offers_block_1 .slick-arrow.slick-next').click();
 			    });
+
+			     $('.block_views_reviews_block_4 .accordBlock').click(function(){
+			    	$('.block_views_reviews_block_4 .slick-arrow.slick-next').click();
+			    });
+
+
+
+
 
 
 			    $('.accordBlockPresents').click(function(){
@@ -174,9 +182,9 @@
 			        $(this).removeAttr("style");
 			    });
 
-			    $('<div class="sliderArtist"></div>').prependTo('.block_views_artists_block_2 .view-content,.block_drupal_package_block_photo_services .view-content,.block_drupal_package_block_photo_related_services .view-content');
-			    $('#block-views-artists-block-2 .photoswipe-gallery .views-row a img,.block_drupal_package_block_photo_services .photoswipe-gallery .views-row a img,.block_drupal_package_block_photo_related_services .photoswipe-gallery .views-row a img').each(function(){
-			        $(this).parents('.block_views_artists_block_2 .view-content,.block_drupal_package_block_photo_services .view-content,.block_drupal_package_block_photo_related_services .view-content').find('.sliderArtist').append($(this));
+			    $('<div class="sliderArtist"></div>').prependTo('.block_views_artists_block_2 .view-content,.block_drupal_package_block_photo_services .view-content,.block_drupal_package_block_photo_related_services .view-content,#block-views-events-block-4 .view-content');
+			    $('#block-views-artists-block-2 .photoswipe-gallery .views-row a img,.block_drupal_package_block_photo_services .photoswipe-gallery .views-row a img,.block_drupal_package_block_photo_related_services .photoswipe-gallery .views-row a img,#block-views-events-block-4 .photoswipe-gallery .views-row a img').each(function(){
+			        $(this).parents('.block_views_artists_block_2 .view-content,.block_drupal_package_block_photo_services .view-content,.block_drupal_package_block_photo_related_services .view-content,#block-views-events-block-4 .view-content').find('.sliderArtist').append($(this));
 			    });
 
 			     $('.sliderArtist').slick({
@@ -195,6 +203,8 @@
 				$('.sliderArtist .slider_buttons .slider_left').livequery('click', function() {
 					$('.sliderArtist .slick-arrow.slick-prev').click();
 				});
+
+				
 
 
 				
@@ -234,6 +244,8 @@
 			    });
 
 			    $(".view-diplomas.view-display-id-page_1 .item-list").appendTo('.view-diplomas.view-display-id-page_1 .view-content');
+
+
 
 
 			    
