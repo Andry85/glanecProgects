@@ -46,7 +46,7 @@
 			    });
 
 			    $('.block_drupal_package_block_gifts_main .field-name-dpb-title-field .field-item').wrapInner("<div class='accordBlockPresents'></div>");
-			    $(".block_views_clients_block_1 .block_title,.block_block_2 .block_title,.block_similar_artists .block_title").wrapInner("<div class='accordBlock'></div>");
+			    $(".block_views_clients_block_1 .block_title,.block_block_2 .block_title,.block_similar_artists .block_title,.view-id-offers.view-display-id-page_1 .view-header .subb_title").wrapInner("<div class='accordBlock'></div>");
 
 			    $('.block_drupal_package_block_gifts_main .field_inner_wrap_dpb_title_field').nextAll('div').wrapAll("<div class='presentsWrap'></div>");
 			    $('.accordBlock').click(function(){
@@ -66,8 +66,12 @@
 			    	$('.block_views_offers_block_1 .slick-arrow.slick-next').click();
 			    });
 
-			     $('.block_views_reviews_block_4 .accordBlock').click(function(){
+			    $('.block_views_reviews_block_4 .accordBlock').click(function(){
 			    	$('.block_views_reviews_block_4 .slick-arrow.slick-next').click();
+			    });
+
+			     $('.view-id-offers.view-display-id-page_1 .accordBlock').click(function(){
+			    	$(this).parents('.view-header').next('.view-content').slideToggle('slow');
 			    });
 
 
