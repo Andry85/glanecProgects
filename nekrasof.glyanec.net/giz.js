@@ -337,7 +337,7 @@
 		})
 		
 		
-		var each = $('.block_drupal_package_block_benefits_main .field-name-field-benefits > .field-items > .field-item').get().reverse();
+		var each = $('.block_drupal_package_block_benefits_main .field-name-field-benefits > .field-items > .field-item,.node-type-lending .block_benefits_landing .field-name-field-lending-item-benefits > .field-items > .field-item').get().reverse();
 		$count = 0;
 		$(each).each(function() {
 			$count ++;

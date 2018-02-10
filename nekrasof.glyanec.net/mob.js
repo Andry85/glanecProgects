@@ -41,12 +41,12 @@
 					$('.block_views_clients_block_2 .slick-arrow.slick-prev').click();
 				});
 
-				$(".sidebar-first .middle_after_bottom .middle_inner .block .block_title,.block_views_offers_block_1 .block_title,.block_views_related_services_block_2 .block_title,.block_views_reviews_block_4 .block_title,.block.block_views_services_block_1 .block_title,.block_views_related_services_block_1 .block_title,.block_views_reviews_block_1 .block_title,.block_views_reviews_block_2 .block_title").each(function(){
+				$(".sidebar-first .middle_after_bottom .middle_inner .block .block_title,.block_views_offers_block_1 .block_title,.block_views_related_services_block_2 .block_title,.block_views_reviews_block_4 .block_title,.block.block_views_services_block_1 .block_title,.block_views_related_services_block_1 .block_title,.block_views_reviews_block_1 .block_title,.block_views_reviews_block_2 .block_title,.block_views_events_block_2 .block_title").each(function(){
 			        $(this).wrapInner("<div class='accordBlock'></div>");
 			    });
 
 			    $('.block_drupal_package_block_gifts_main .field-name-dpb-title-field .field-item').wrapInner("<div class='accordBlockPresents'></div>");
-			    $(".block_views_clients_block_1 .block_title,.block_block_2 .block_title,.block_similar_artists .block_title,.view-id-offers.view-display-id-page_1 .view-header .subb_title,#block-views-events-block-6 .block_title,.block_views_related_services_block_5 .block_title,#block-views-unusual-gifts-block-2 .block_title,#block-views-price-certificates-block .block_title").wrapInner("<div class='accordBlock'></div>");
+			    $(".block_views_clients_block_1 .block_title,.block_block_2 .block_title,.block_similar_artists .block_title,.view-id-offers.view-display-id-page_1 .view-header .subb_title,#block-views-events-block-6 .block_title,.block_views_related_services_block_5 .block_title,#block-views-unusual-gifts-block-2 .block_title,#block-views-price-certificates-block .block_title,.block_views_offers_block_4 .block_title,.block_views_press_block_1 .block_title,.block_views_artists_block_4 .block_title").wrapInner("<div class='accordBlock'></div>");
 
 			    $('.block_drupal_package_block_gifts_main .field_inner_wrap_dpb_title_field').nextAll('div').wrapAll("<div class='presentsWrap'></div>");
 			    $('.accordBlock').click(function(){
@@ -84,8 +84,6 @@
 
 
 
-
-
 			    $('.accordBlockPresents').click(function(){
 		    		$(this).parents('.block_content').find('.presentsWrap').slideToggle('slow');
 		    		$(this).toggleClass("active");
@@ -115,9 +113,6 @@
 				}
 
 
-			   
-
-
 			   	$(".slicknav_btn").click(function(){
 				    if ($(this).hasClass('slicknav_open')) {
 			    		$('.header .block_search_form').hide();
@@ -131,6 +126,7 @@
 				var pageName = $('.slicknav_nav ul li ul li a.active,.slicknav_nav li ul li.parent_link > a.active').text();
 				$("<span class='pageNameTitle'>"+ pageName +"</span>").prependTo(".not-front .header");
 				$('.block_drupal_package_block_leadership .field_inner_wrap_field_about_img').insertAfter('.block_drupal_package_block_leadership .field_inner_wrap_field_block_body');
+				$('.node-type-lending .block_video_landing .desc_director .field_inner_node_process_field_lending_photo_video').insertAfter('.node-type-lending .block_video_landing .desc_director .field_inner_node_process_field_lending_desc2_video');
 
 
 				$('.block_views_clients_block_1 .view-content').slick({
@@ -173,20 +169,9 @@
 				});
 
 				$('.node-type-artists .content_top_region .page_title').prependTo('.node.node_artists .left_wrap');
-				$('<a class="node_artists_back" href="../services"></a>').prependTo('.node.node_artists .left_wrap');
+				$('<a class="node_artists_back" href="/"></a>').prependTo('.node.node_artists .left_wrap');
 
-				// var attrArtists = $('.node-type-artists').parent('html').attr('lang');
-				// switch (attrArtists) {
-				//   case 'ru':
-				//     	$("<span class='pageNameTitle'>Заказ артистов, организация концертов</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
-				//     break;
-				//   case 'uk':
-				// 		$("<span class='pageNameTitle'>Замовлення артистів, організація концертів</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
-				//     break;
-				//   case 'en':
-				//   		$("<span class='pageNameTitle'>Order of artists, organization of concerts</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
-				//     break;
-				// }
+	
 				
 				$('<div class="blockSeparator"></div>').insertAfter('.node.node_artists .right_wrap .info_artists .arrow');
 				$('#block-views-artists-block-2 .photoswipe-gallery .views-row').each(function(){
@@ -216,8 +201,6 @@
 				});
 
 				
-
-
 				
 							
 				$('.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_contacts_phone').insertAfter('.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap.field_inner_wrap_field_social_links2');
@@ -232,19 +215,6 @@
 
 
 
-
-				// var vacanciesList = $('.node-type-careers').parent('html').attr('lang');
-				// switch (vacanciesList) {
-				//   case 'ru':
-				//     	$("<span class='pageNameTitle'>Вакансии</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
-				//     break;
-				//   case 'uk':
-				// 		$("<span class='pageNameTitle'>Вакансії</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
-				//     break;
-				//   case 'en':
-				//   		$("<span class='pageNameTitle'>Careers</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
-				//     break;
-				// }
 
 				$(".view-diplomas.view-display-id-page_1 .view-header").each(function(){
 			        $(this).wrapInner("<div class='accordBlock'></div>");
