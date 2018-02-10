@@ -46,7 +46,7 @@
 			    });
 
 			    $('.block_drupal_package_block_gifts_main .field-name-dpb-title-field .field-item').wrapInner("<div class='accordBlockPresents'></div>");
-			    $(".block_views_clients_block_1 .block_title,.block_block_2 .block_title,.block_similar_artists .block_title,.view-id-offers.view-display-id-page_1 .view-header .subb_title").wrapInner("<div class='accordBlock'></div>");
+			    $(".block_views_clients_block_1 .block_title,.block_block_2 .block_title,.block_similar_artists .block_title,.view-id-offers.view-display-id-page_1 .view-header .subb_title,#block-views-events-block-6 .block_title,.block_views_related_services_block_5 .block_title,#block-views-unusual-gifts-block-2 .block_title,#block-views-price-certificates-block .block_title").wrapInner("<div class='accordBlock'></div>");
 
 			    $('.block_drupal_package_block_gifts_main .field_inner_wrap_dpb_title_field').nextAll('div').wrapAll("<div class='presentsWrap'></div>");
 			    $('.accordBlock').click(function(){
@@ -175,18 +175,18 @@
 				$('.node-type-artists .content_top_region .page_title').prependTo('.node.node_artists .left_wrap');
 				$('<a class="node_artists_back" href="../services"></a>').prependTo('.node.node_artists .left_wrap');
 
-				var attrArtists = $('.node-type-artists').parent('html').attr('lang');
-				switch (attrArtists) {
-				  case 'ru':
-				    	$("<span class='pageNameTitle'>Заказ артистов, организация концертов</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
-				    break;
-				  case 'uk':
-						$("<span class='pageNameTitle'>Замовлення артистів, організація концертів</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
-				    break;
-				  case 'en':
-				  		$("<span class='pageNameTitle'>Order of artists, organization of concerts</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
-				    break;
-				}
+				// var attrArtists = $('.node-type-artists').parent('html').attr('lang');
+				// switch (attrArtists) {
+				//   case 'ru':
+				//     	$("<span class='pageNameTitle'>Заказ артистов, организация концертов</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
+				//     break;
+				//   case 'uk':
+				// 		$("<span class='pageNameTitle'>Замовлення артистів, організація концертів</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
+				//     break;
+				//   case 'en':
+				//   		$("<span class='pageNameTitle'>Order of artists, organization of concerts</span>").prependTo(".node-type-artists .header").next('.pageNameTitle').remove();
+				//     break;
+				// }
 				
 				$('<div class="blockSeparator"></div>').insertAfter('.node.node_artists .right_wrap .info_artists .arrow');
 				$('#block-views-artists-block-2 .photoswipe-gallery .views-row').each(function(){
@@ -233,18 +233,18 @@
 
 
 
-				var vacanciesList = $('.node-type-careers').parent('html').attr('lang');
-				switch (vacanciesList) {
-				  case 'ru':
-				    	$("<span class='pageNameTitle'>Вакансии</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
-				    break;
-				  case 'uk':
-						$("<span class='pageNameTitle'>Вакансії</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
-				    break;
-				  case 'en':
-				  		$("<span class='pageNameTitle'>Careers</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
-				    break;
-				}
+				// var vacanciesList = $('.node-type-careers').parent('html').attr('lang');
+				// switch (vacanciesList) {
+				//   case 'ru':
+				//     	$("<span class='pageNameTitle'>Вакансии</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
+				//     break;
+				//   case 'uk':
+				// 		$("<span class='pageNameTitle'>Вакансії</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
+				//     break;
+				//   case 'en':
+				//   		$("<span class='pageNameTitle'>Careers</span>").prependTo(".node-type-careers .header").next('.pageNameTitle').remove();
+				//     break;
+				// }
 
 				$(".view-diplomas.view-display-id-page_1 .view-header").each(function(){
 			        $(this).wrapInner("<div class='accordBlock'></div>");
