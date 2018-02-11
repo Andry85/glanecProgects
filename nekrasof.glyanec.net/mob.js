@@ -46,7 +46,7 @@
 			    });
 
 			    $('.block_drupal_package_block_gifts_main .field-name-dpb-title-field .field-item').wrapInner("<div class='accordBlockPresents'></div>");
-			    $(".block_views_clients_block_1 .block_title,.block_block_2 .block_title,.block_similar_artists .block_title,.view-id-offers.view-display-id-page_1 .view-header .subb_title,#block-views-events-block-6 .block_title,.block_views_related_services_block_5 .block_title,#block-views-unusual-gifts-block-2 .block_title,#block-views-price-certificates-block .block_title,.block_views_offers_block_4 .block_title,.block_views_press_block_1 .block_title,.block_views_artists_block_4 .block_title").wrapInner("<div class='accordBlock'></div>");
+			    $(".block_views_clients_block_1 .block_title,.block_block_2 .block_title,.block_similar_artists .block_title,.view-id-offers.view-display-id-page_1 .view-header .subb_title,#block-views-events-block-6 .block_title,.block_views_related_services_block_5 .block_title,#block-views-unusual-gifts-block-2 .block_title,#block-views-price-certificates-block .block_title,.block_views_offers_block_4 .block_title,.block_views_press_block_1 .block_title,.block_views_artists_block_4 .block_title,.block_reviews_landing .block_title").wrapInner("<div class='accordBlock'></div>");
 
 			    $('.block_drupal_package_block_gifts_main .field_inner_wrap_dpb_title_field').nextAll('div').wrapAll("<div class='presentsWrap'></div>");
 			    $('.accordBlock').click(function(){
@@ -79,6 +79,10 @@
 			    });
 			    $('.block_views_reviews_block_2 .accordBlock').click(function(){
 			    	$('.block_views_reviews_block_2 .slick-arrow.slick-next').click();
+			    });
+
+			    $('.block_reviews_landing .accordBlock').click(function(){
+			    	$(this).parent('.block_title').next('.view-reviews').slideToggle('slow');
 			    });
 
 
@@ -178,9 +182,9 @@
 			        $(this).removeAttr("style");
 			    });
 
-			    $('<div class="sliderArtist"></div>').prependTo('.block_views_artists_block_2 .view-content,.block_drupal_package_block_photo_services .view-content,.block_drupal_package_block_photo_related_services .view-content,#block-views-events-block-4 .view-content,.block_photo_news .view-content');
-			    $('#block-views-artists-block-2 .photoswipe-gallery .views-row a img,.block_drupal_package_block_photo_services .photoswipe-gallery .views-row a img,.block_drupal_package_block_photo_related_services .photoswipe-gallery .views-row a img,#block-views-events-block-4 .photoswipe-gallery .views-row a img,.block_photo_news .photoswipe-gallery .views-row a img').each(function(){
-			        $(this).parents('.block_views_artists_block_2 .view-content,.block_drupal_package_block_photo_services .view-content,.block_drupal_package_block_photo_related_services .view-content,#block-views-events-block-4 .view-content,.block_photo_news .view-content').find('.sliderArtist').append($(this));
+			    $('<div class="sliderArtist"></div>').prependTo('.block_views_artists_block_2 .view-content,.block_drupal_package_block_photo_services .view-content,.block_drupal_package_block_photo_related_services .view-content,#block-views-events-block-4 .view-content,.block_photo_news .view-content,.node-type-lending .block_photo_landing .view-content');
+			    $('#block-views-artists-block-2 .photoswipe-gallery .views-row a img,.block_drupal_package_block_photo_services .photoswipe-gallery .views-row a img,.block_drupal_package_block_photo_related_services .photoswipe-gallery .views-row a img,#block-views-events-block-4 .photoswipe-gallery .views-row a img,.block_photo_news .photoswipe-gallery .views-row a img,.node-type-lending .block_photo_landing .photoswipe-gallery .views-row a img').each(function(){
+			        $(this).parents('.block_views_artists_block_2 .view-content,.block_drupal_package_block_photo_services .view-content,.block_drupal_package_block_photo_related_services .view-content,#block-views-events-block-4 .view-content,.block_photo_news .view-content,.node-type-lending .block_photo_landing .view-content').find('.sliderArtist').append($(this));
 			    });
 
 			     $('.sliderArtist').slick({

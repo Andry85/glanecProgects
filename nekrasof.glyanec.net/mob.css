@@ -265,7 +265,8 @@
 	#block-views-events-block-4 .block_title,
 	.region-content .block_photo_news .block_title,
 	.block_disqus_disqus_comments .block_content_inner .block_title,
-	#block-views-souvenirs-block-1 .block_title {
+	#block-views-souvenirs-block-1 .block_title,
+	.node-type-lending .block_photo_landing .block_title {
 		margin-right: 10px;
 		font-size: 32px;
 		width: 150px;
@@ -377,7 +378,9 @@
 	.errores_page_content,
 	.node-type-lending .block_desc_wrap_landing,
 	.node-type-lending .block_video_landing,
-	.node-type-lending .block_benefits_landing
+	.node-type-lending .block_benefits_landing,
+	.block_reviews_landing,
+	.node-type-lending .block_contacts_landing
 	{
 		padding-left: 10px;
 		padding-right: 10px;
@@ -449,7 +452,8 @@
 	.view-id-dpb.view-display-id-block_1 .photoswipe-gallery,
 	#block-views-events-block-4 .photoswipe-gallery,
 	.view-id-news.view-display-id-block_1 .photoswipe-gallery,
-	.view-id-souvenirs.view-display-id-block_1 .photoswipe-gallery
+	.view-id-souvenirs.view-display-id-block_1 .photoswipe-gallery,
+	.node-type-lending .block_photo_landing .view .photoswipe-gallery
 	 {
 		float: none!important;
 		margin: 0 auto!important;
@@ -460,7 +464,9 @@
 	#block-views-events-block-4 .block_title,
 	.region-content .block_photo_news .block_title,
 	.block_disqus_disqus_comments .block_content_inner .block_title,
-	#block-views-souvenirs-block-1 .block_title {
+	#block-views-souvenirs-block-1 .block_title,
+	.node-type-lending .block_photo_landing .block_title
+	 {
 		float: none;
 		margin: 0 0 30px 0;
 		text-align: center;
@@ -645,6 +651,23 @@
 		width: 50%;
 		margin-left: -4px;
 	}
+	.view-reviews.view-display-id-block_6 .view-content {
+		justify-content: center;
+	}
+	.view-reviews.view-display-id-block_6 .view-content .views-row {
+		width: 20%;
+	}
+	.node-type-lending .block_contacts_landing .image_right {
+		width: 195px;
+		height: 313px;
+		background-size: cover;
+		position: absolute;
+		right: 0; 
+		bottom: 0;
+	}
+	.node-type-lending .block_contacts_landing .block_content {
+		padding-bottom: 80px;
+	}
 
 
 
@@ -749,7 +772,8 @@
 	.view-id-dpb.view-display-id-block_1 .photoswipe-gallery,
 	#block-views-events-block-4 .photoswipe-gallery,
 	.view-id-news.view-display-id-block_1 .photoswipe-gallery,
-	.view-id-souvenirs.view-display-id-block_1 .photoswipe-gallery {
+	.view-id-souvenirs.view-display-id-block_1 .photoswipe-gallery,
+	.node-type-lending .block_photo_landing .view .photoswipe-gallery {
 		width: 880px!important;
 	}
 	#block-views-artists-block-2 .base_left_img {
@@ -1002,7 +1026,8 @@
 	.view-id-dpb.view-display-id-block_1 .photoswipe-gallery,
 	#block-views-events-block-4 .photoswipe-gallery,
 	.view-id-news.view-display-id-block_1 .photoswipe-gallery,
-	.view-id-souvenirs.view-display-id-block_1 .photoswipe-gallery {
+	.view-id-souvenirs.view-display-id-block_1 .photoswipe-gallery,
+	.node-type-lending .block_photo_landing .view .photoswipe-gallery {
 		width: 660px!important;
 	}
 	.not-front.page-node-1 .header .logo_wrapper {
@@ -1281,6 +1306,26 @@
 	.node-type-lending .block_benefits_landing .field-name-field-lending-item-benefits > .field-items > .field-item {
 		flex-basis: 33.3%;
 	}
+	.node-type-lending .block_artists_landing .view-artists.view-display-id-block_5 .views-exposed-form {
+		margin-left: 0;
+		left: 0;
+		bottom: 40px;
+	}
+	.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value .views-widget .form-item,
+	.node-type-lending .block_artists_landing .view-artists.view-display-id-block_5 .views-exposed-form {
+		max-width: 600px;
+	}
+	.view-reviews.view-display-id-block_6 .view-content .views-row {
+		width: 30%;
+	}
+	.node-type-lending .block_contacts_landing .image_right {
+		display: none;
+	}
+
+	.node-type-lending .block_contacts_landing .block_content_inner {
+		width: 100%;
+	}
+
 
 
 	
@@ -2352,7 +2397,8 @@
 	.view-id-related_services.view-display-id-block_4 .photoswipe-gallery,
 	.view-id-services.view-display-id-block_2 .photoswipe-gallery,
 	.view-id-unusual_gifts.view-display-id-block_1 .photoswipe-gallery,
-	.view-id-souvenirs.view-display-id-block_1 .photoswipe-gallery
+	.view-id-souvenirs.view-display-id-block_1 .photoswipe-gallery,
+	.node-type-lending .block_photo_landing .view .photoswipe-gallery
 	 {
 		display: none!important;
 	}
@@ -2360,7 +2406,8 @@
 	.block_drupal_package_block_photo_services .view-content,
 	.block_drupal_package_block_photo_related_services .view-content,
 	#block-views-events-block-4 .view-content,
-	.block_photo_news .view-content
+	.block_photo_news .view-content,
+	.node-type-lending .block_photo_landing .view-content
 	 {
 		position: relative;
 		max-width: 320px;
@@ -2375,14 +2422,16 @@
 	.block_drupal_package_block_photo_services .view-content .slick-slide img,
 	.block_drupal_package_block_photo_related_services .view-content .slick-slide img,
 	#block-views-events-block-4 .view-content .slick-slide img,
-	.block_photo_news .view-content .slick-slide img {
+	.block_photo_news .view-content .slick-slide img,
+	.node-type-lending .block_photo_landing .view-content .slick-slide img {
 		width: 100%;
 	}
 	#block-views-artists-block-2  .slider_buttons,
 	.block_drupal_package_block_photo_services .slider_buttons,
 	.block_drupal_package_block_photo_related_services .slider_buttons,
 	#block-views-events-block-4 .slider_buttons,
-	.block_photo_news .slider_buttons {
+	.block_photo_news .slider_buttons,
+	.node-type-lending .block_photo_landing .slider_buttons {
 		top: auto;
 		bottom: 25px;
 		width: 100%;
@@ -2391,7 +2440,8 @@
 	.block_drupal_package_block_photo_services .slider_buttons div.slider_left,
 	.block_drupal_package_block_photo_related_services .slider_buttons div.slider_left,
 	#block-views-events-block-4 .slider_buttons div.slider_left,
-	.block_photo_news .slider_buttons div.slider_left {
+	.block_photo_news .slider_buttons div.slider_left,
+	.node-type-lending .block_photo_landing .slider_buttons div.slider_left {
 		position: absolute;
 		left: 30px;
 	}
@@ -2399,7 +2449,8 @@
 	.block_drupal_package_block_photo_services .slider_buttons div.slider_right,
 	.block_drupal_package_block_photo_related_services .slider_buttons div.slider_right,
 	#block-views-events-block-4 .slider_buttons div.slider_right,
-	.block_photo_news .slider_buttons div.slider_right {
+	.block_photo_news .slider_buttons div.slider_right,
+	.node-type-lending .block_photo_landing .slider_buttons div.slider_right {
 		position: absolute;
 		right: 30px;
 	}
@@ -2407,14 +2458,16 @@
 	.block_drupal_package_block_photo_services .slick-arrow,
 	.block_drupal_package_block_photo_related_services .slick-arrow,
 	#block-views-events-block-4 .slick-arrow,
-	.block_photo_news .slick-arrow {
+	.block_photo_news .slick-arrow,
+	.node-type-lending .block_photo_landing .slick-arrow {
 		display: none!important;
 	}
 	#block-views-artists-block-2 .photoswipe-gallery .views-row,
 	.view-id-dpb.view-display-id-block_1 .photoswipe-gallery .views-row,
 	#block-views-events-block-4 .photoswipe-gallery .views-row,
 	.block_photo_news .photoswipe-gallery .views-row,
-	.view-id-news.view-display-id-block_1 .photoswipe-gallery .views-row {
+	.view-id-news.view-display-id-block_1 .photoswipe-gallery .views-row,
+	.node-type-lending .block_photo_landing .photoswipe-gallery .views-row {
 		float: none!important;
 		margin: 0!important;
 	}
@@ -2425,7 +2478,9 @@
 		position: relative;
 	}
 	#block-views-artists-block-2 .block_title,
-	.block_drupal_package_block_photo_services .field-name-dpb-title-field{
+	.block_drupal_package_block_photo_services .field-name-dpb-title-field,
+	.node-type-lending .block_photo_landing .block_title
+	{
 		font-size: 24px;
 		text-align: center;
 		margin: 17px 0 25px 0;
@@ -2989,10 +3044,12 @@
 	.view-services.view-display-id-page_1 {
 		margin: 0;
 	}
-	.block_drupal_package_block_photo_services .item-list {
+	.block_drupal_package_block_photo_services .item-list,
+	.node-type-lending .block_photo_landing .item-list {
 		display: none;
 	}
-	.block_drupal_package_block_photo_services .view {
+	.block_drupal_package_block_photo_services .view,
+	.node-type-lending .block_photo_landing .view {
 		overflow: visible;
 	}
 	.block_drupal_package_block_photo_services,
@@ -3000,7 +3057,9 @@
 	#block-views-events-block-4,
 	.block_photo_news,
 	#block-views-events-block-5,
-	#block-views-unusual-gifts-block-1
+	#block-views-unusual-gifts-block-1,
+	.block_drupal_package_block_photo_services,
+	.node-type-lending .block_photo_landing
 	 {
 		padding-top: 10px;
 		padding-bottom: 50px;
@@ -3024,7 +3083,8 @@
 	.block_drupal_package_block_photo_services .field-name-dpb-title-field,
 	.block_views_artists_block_1 .field-name-dpb-title-field,
 	#block-views-events-block-4 .block_title,
-	.region-content .block_photo_news .block_title
+	.region-content .block_photo_news .block_title,
+	.node-type-lending .block_photo_landing .block_title
 	 {
 		text-align: center!important;
 	}
@@ -3698,6 +3758,90 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.view-artists.view-display-id-block_5 .view-filters .views-widget-filter-title_field_value .views-widget .form-item label {
+		white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    width: 100%;
+	}
+	.view-artists.view-display-id-block_5 .view-filters .views-widget-filter-title_field_value .views-widget .form-item,
+	.node-type-lending .block_artists_landing .view-artists.view-display-id-block_5 .views-exposed-form {
+		max-width: none;
+	}
+	.node-type-lending .block_artists_landing .view-artists.view-display-id-block_5 .views-exposed-form .views-submit-button {
+		position: relative;
+		width: 100%;
+	}
+	.node-type-lending .block_artists_landing .view-artists.view-display-id-block_5 .views-exposed-form .views-submit-button input {
+		margin-top: 10px;
+    	width: 100%;
+	}
+	.node-type-lending .block_artists_landing .view-artists.view-display-id-block_5 .views-exposed-form {
+		padding: 10px;
+		bottom: 0;
+	}
+	.view-artists.view-display-id-block_5 .view-filters .views-widget-filter-title_field_value .views-widget {
+		margin: 0;
+	}
+	.node-type-lending .block_artists_landing .view-artists.view-display-id-block_5 {
+		padding-bottom: 130px;
+	}
+	.node-type-lending .block_artists_landing .view-artists.view-display-id-block_5 .pager_my_ui {
+		position: static;
+		padding-top: 30px;
+    	padding-bottom: 17px;
+    	margin: 0 5px;
+	}
+	.node-type-lending .block_artists_landing .block_title {
+		font-size: 24px;
+		margin: 25px 0 30px 0;
+		font-weight: 400;
+	}
+	.view-reviews.view-display-id-block_6 .view-content .views-row {
+		width: 45%;
+	}
+	.block_reviews_landing {
+		padding: 0;
+	}
+	.region-content .block .block_reviews_landing .block_title {
+		font-size: 24px;
+		margin-bottom: 0px;
+	}
+	.block_reviews_landing .view-reviews {
+		display: none;
+		padding-top: 15px;
+	}
+	.node-type-lending .block_contacts_landing {
+		padding-top: 15px;
+	}
+	.node-type-lending .block_contacts_landing .field-name-field-lending-contacts-title,
+	.node-type-lending .block_contacts_landing .field-name-field-lending-contacts-sub-title {
+		font-size: 24px;
+		font-weight: 400;
+	}
+	.node-type-lending .block_contacts_landing .field-name-field-lending-contacts-button {
+		margin-bottom: 50px;
+	}
+	.node-type-lending .block_contacts_landing .block_content {
+		padding-bottom: 20px;
+	}
+	.node-type-lending .block_contacts_landing .contacts_landing {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.node-type-lending .block_contacts_landing .contacts_landing .field_inner_node_process {
+		margin-bottom: 25px;
+	}
+	.footer .block-webform {
+		margin: 0;
+		transform: translate(-50%,-50%);
+		width: 90vw;
+		height: 65vh;
+		overflow-y: scroll;
+	}
+	.view-offers.view-display-id-block_4 .view-content .views-row {
+		margin-bottom: 15px;
+	}
 
 
 
@@ -3706,13 +3850,6 @@
 
 
 	
-
-	
-
-
-
-
-
 
 }
 
@@ -3784,6 +3921,9 @@
 	}
 	.view-action.view-display-id-page_1 .item-list .pager-load-more {
 		margin: 0;
+	}
+	.view-reviews.view-display-id-block_6 .view-content .views-row {
+		width: 80%;
 	}
 	
 
