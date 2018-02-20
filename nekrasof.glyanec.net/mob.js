@@ -86,8 +86,8 @@
 			    });
 
 			    $('.view-artists-category .views-field-name .field-content .accordBlock').click(function(){
-			    	$(this).parents('.views-row').find('.view-artists').slideToggle('slow');
-			    });
+					$(this).parents('.views-row').find('.views-field-tid').slideToggle('slow');
+				});
 
 			    
 
