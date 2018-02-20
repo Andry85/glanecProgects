@@ -155,13 +155,12 @@
 }
 
 /* Search block */
-.view-artists-category {
-
+.view-artists-category .views-field-tid {
+	display: none;
 }
 
 .view-artists-category .view-artists {
 	background-color: #111127;
-	display: none;
 }
 .view-artists-category .view-artists .view-empty {
 	font-size: 16px;
