@@ -41,7 +41,7 @@
 					$('.block_views_clients_block_2 .slick-arrow.slick-prev').click();
 				});
 
-				$(".sidebar-first .middle_after_bottom .middle_inner .block .block_title,.block_views_offers_block_1 .block_title,.block_views_related_services_block_2 .block_title,.block_views_reviews_block_4 .block_title,.block.block_views_services_block_1 .block_title,.block_views_related_services_block_1 .block_title,.block_views_reviews_block_1 .block_title,.block_views_reviews_block_2 .block_title,.block_views_events_block_2 .block_title").each(function(){
+				$(".sidebar-first .middle_after_bottom .middle_inner .block .block_title,.block_views_offers_block_1 .block_title,.block_views_related_services_block_2 .block_title,.block_views_reviews_block_4 .block_title,.block.block_views_services_block_1 .block_title,.block_views_related_services_block_1 .block_title,.block_views_reviews_block_1 .block_title,.block_views_reviews_block_2 .block_title,.block_views_events_block_2 .block_title,.view-artists-category .views-field-name .field-content").each(function(){
 			        $(this).wrapInner("<div class='accordBlock'></div>");
 			    });
 
@@ -84,6 +84,12 @@
 			    $('.block_reviews_landing .accordBlock').click(function(){
 			    	$(this).parent('.block_title').next('.view-reviews').slideToggle('slow');
 			    });
+
+			    $('.view-artists-category .views-field-name .field-content .accordBlock').click(function(){
+			    	$(this).parents('.views-row').find('.view-artists').slideToggle('slow');
+			    });
+
+			    
 
 
 

@@ -54,7 +54,7 @@
 		// }
 		$('.popup_exit, .close').livequery('click', function() {
 			$('.popup_exit').fadeOut();
-			$('#block-block-4, #block-webform-client-block-50, .block_fixed_services .block-webform').fadeOut();
+			$('#block-block-4, #block-webform-client-block-50, .block_fixed_services .block-webform, #block-webform-client-block-140').fadeOut();
 			$('#block-block-4 .content_inner iframe').remove();
 		})
 		$('.error_message_status').livequery(function(){
@@ -216,8 +216,8 @@
 			dots: true,
 			fade: true,
 			draggable: false,
-			// autoplay: true,
-			// autoplaySpeed: 3000
+			autoplay: true,
+			autoplaySpeed: 3000
 		})
 		$('.block_views_events_block_3 .view-events.view-display-id-block_3 .views-row .views-fieldset .slider_buttons .slider_right').livequery('click', function() {
 			$('.block_views_events_block_3 .slick-arrow.slick-next').click();
@@ -389,6 +389,19 @@
 		attr_viber = attr_viber.replace('/','');
 		$('.footer .block_drupal_package_block_contacts_footer .field_inner_wrap_field_links_soc .field-item:last-child a').attr('href', 'viber://chat?number='+attr_viber);
 		$('.footer .block_drupal_package_block_contacts_footer .field_inner_wrap_field_links_soc .field-item:first-child a').attr('href', 'skype:'+attr_skype+'?call');
+
+
+		$('.block_block_5 .menu_btn:not(:animated)').hover(
+			function(){
+		    	$( this ).parents('.block_block_5').find('.sidebar_menu_wrapp').stop().addClass('active');
+		  	}, function() {
+		    	$( this ).parents('.block_block_5').find('.sidebar_menu_wrapp').removeClass('active');
+		  	}			
+		);	
+
+		$('.block_block_9 .block_content, .btn_form_fixed').livequery('click', function() {
+			$('#block-webform-client-block-140, .popup_exit').fadeIn();
+		})	
 	});
 	 Drupal.behaviors.giz = {
     	attach: function(context, settings) {	
