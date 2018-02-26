@@ -114,8 +114,16 @@
 
     anim($('div'), $('.view-services.view-display-id-page_1 .view-content .views-row'), $('.view-services.view-display-id-page_1 .view-content .views-row'), 'show', 250);
     anim($('div'), $('.view-id-dpb.view-display-id-block_1 .photoswipe-gallery .views-row'), $('.view-id-dpb.view-display-id-block_1 .photoswipe-gallery .views-row'), 'galery_anym', 250);
+    anim($('div'), $('#block-drupal-package-block-about .field_inner_wrap_field_benefits'), $('#block-drupal-package-block-about .field_inner_wrap_field_benefits .field-name-field-benefits > .field-items > .field-item'), 'show', 150);
+    anim($('div'), $('.block_drupal_package_block_leadership .field_inner_wrap_field_about_img'), $('.block_drupal_package_block_leadership .field_inner_wrap_field_about_img, .block_drupal_package_block_leadership .field_inner_wrap_field_block_body'), 'show', 250);
+    anim($('div'), $('#block-views-artists-block-1.block_views_artists_block_1 .views-row'), $('#block-views-artists-block-1.block_views_artists_block_1 .views-row'), 'show', 250);
+    anim($('div'), $('#block-views-clients-block-1 .block_content .view-display-id-block_1'), $('#block-views-clients-block-1 .block_content .view-display-id-block_1'), 'show', 250);
+    anim($('div'), $('#block-views-artists-block-4 .view-display-id-block_4 .views-row'), $('#block-views-artists-block-4 .view-display-id-block_4 .views-row'), 'show', 200);
+    anim($('div'), $('#block-views-related-services-block-2 .block_content .view-content .views-row'), $('#block-views-related-services-block-2 .block_content .view-content .views-row'), 'show', 200);
+    anim($('div'), $('#block-drupal-package-block-services-order-text-2 .field-name-field-benefits'), $('#block-drupal-package-block-services-order-text-2 .field-name-field-benefits > .field-items > .field-item'), 'show', 200);
+    anim($('div'), $('#block-system-main .block_content .view-content .views-row'), $('#block-system-main .block_content .view-content .views-row'), 'show', 200);
 
-
+    anim($('div'), $('#block-drupal-package-block-certificates-page-description .field_inner_wrap_field_description_imgs'), $('#block-drupal-package-block-certificates-page-description .field_inner_wrap_field_description_imgs .field-items .field-item'), 'show', 200);
 
     if ($("div").is("#block-drupal-package-block-about-main")) {
       var block2 = $('#block-drupal-package-block-about-main');
@@ -126,7 +134,7 @@
       });
     }
     function percentIsInVision2() {
-      var blockBottom = block2.offset().top + 100;
+      var blockBottom = block2.offset().top + 250;
       var windowBottom = $(window).scrollTop() + $(window).height();
       return windowBottom >= blockBottom;
     }
