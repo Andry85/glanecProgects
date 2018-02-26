@@ -807,6 +807,10 @@
 
 }
 @media (max-width: 1199px) { 
+	.btn_form_fixed {
+		left: auto;
+		right: 20px;
+	}
 	.not-front .header .logo_wrapper {
 		margin-left: -121px;
 		top: 75px;
@@ -1716,7 +1720,7 @@
 	}
 	.block_drupal_package_block_benefits_main .field-name-dpb-title-field {
 		text-align: center;
-		font-size: 36px;
+		font-size: 36px!important;
 		font-weight: 300;
 		line-height: 1.2;
 		margin-bottom: 21px;
@@ -2110,6 +2114,7 @@
 	.block_views_related_services_block_5 .views-row
 	 {
 		width: 100%;
+		clear: both;
 	}
 	.block_views_artists_block_1 .views-row:nth-child(2n+1) .views-field-field-node-preview,
 	.block_similar_artists .views-row:nth-child(2n+1) .views-field-field-node-preview,
@@ -2541,14 +2546,18 @@
 	.node-type-lending .block_photo_landing .view-content
 	 {
 		position: relative;
-		max-width: 320px;
+		width: 100%;
 		margin: 0 auto;
+	}
+	.slick-initialized .slick-slide {
+		width: 100%;
 	}
 	#block-views-artists-block-2 .base_left_img {
 		position: static!important;
 		width: 100%!important;
 		margin-top: 53px;
 	}
+
 	#block-views-artists-block-2 .view-content .slick-slide img,
 	.block_drupal_package_block_photo_services .view-content .slick-slide img,
 	.block_drupal_package_block_photo_related_services .view-content .slick-slide img,
@@ -2688,6 +2697,9 @@
 	{
 		font-size: 24px;
 	}
+	.block_drupal_package_block_contacts .field_inner_wrap_field_team .field-name-field-team-phone {
+		padding-top: 15px;
+	}
 	.block_drupal_package_block_contacts .left_wrap_block .field_dpb_inner_wrap {
 		font-size: 16px;
 	}
@@ -2824,7 +2836,9 @@
 		padding-top: 20px;
 	}
 	.block_drupal_package_block_about_find_careers .field-name-field-btn-block .field-item {
-		margin: 0 0 20px 40px;
+		margin: 0 auto 20px auto;
+		width: 216px;
+		display: block;
 	}
 	.node-type-careers .content_top_region {
 		background: #111127!important;
@@ -3134,12 +3148,16 @@
 	.node-type-page .content_top_region {
 		display: none;
 	}
+	.content_top_region_about {
+		display: block!important;
+	}
 	.node_page {
 		padding-top: 20px;
 	}
 	.field_inner_node_process .field-item .rtecenter {
-		text-align: left;
+		text-align: justify;
 		margin: 0;
+		word-wrap: break-word;
 	}
 	.page-node .node .field-name-body img {
 		float: none!important;
@@ -3972,6 +3990,21 @@
 	}
 	.view-offers.view-display-id-block_4 .view-content .views-row {
 		margin-bottom: 15px;
+	}
+	.btn_form_fixed {
+		display: none;
+	}
+	.block_drupal_package_block_about_main .field_inner_wrap_field_about_main_link .field-name-field-about-main-link > .field-items > .field-item .field-name-field-about-main-link-item a {
+		text-decoration: underline!important;
+	}
+	.footer .block_drupal_package_block_footer .field-name-field-social-links .field-item {
+		margin: 0 17px;
+	}
+	.block_summary_send .block-webform .webform-client-form .form-item textarea {
+		margin-top: 3px;
+	}
+	.footer {
+		z-index: 997;
 	}
 
 

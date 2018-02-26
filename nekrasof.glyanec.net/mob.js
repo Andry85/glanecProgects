@@ -4,7 +4,8 @@
 		// adaptive menu
         $('.header .region-header .block_system_main_menu .block_content > .menu,.header .region-header .block_content > .block_menu_header > .menu').slicknav({
             label: '',
-            easingOpen: "swing"
+            easingOpen: "swing",
+            allowParentLinks: true
         });
 
 
