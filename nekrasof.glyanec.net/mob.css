@@ -56,6 +56,17 @@
   transition: all 0.3s ease-in;
 }
 
+
+  .slicknav_btn.slicknav_open .slicknav_icon-bar {position: absolute; top: 10px;}
+  .slicknav_btn.slicknav_open  .slicknav_icon-bar:first-child {display: none;}
+  .slicknav_btn.slicknav_open  .slicknav_icon-bar:nth-child(2) {transform: rotate(45deg);}
+  .slicknav_btn.slicknav_open  .slicknav_icon-bar:nth-child(3) {transform: rotate(-45deg);}
+
+  .slicknav_btn.slicknav_open .slicknav_icon {
+  	position: relative;
+  	top: -10px;
+  }
+
 /* Custome submenu */
 .slicknav_nav li a {
 	color: #fff;
@@ -2332,11 +2343,11 @@
 	.block_views_press_category_block_1 .block_content {
 		position: relative;
 	}
-	.block_views_press_category_block_1  .slider_buttons {
+	.block_views_press_category_block_1 .slider_buttons {
 	    left: 50%;
 	    transform: translate(-50%,0);
 	    width: 260px;
-	    bottom: 0;
+	    bottom: 50%;
 	    top: auto;
 	}
 	.block_views_press_category_block_1 .slider_buttons div.slider_left {
@@ -2901,6 +2912,7 @@
 	.block_summary_send .block-webform .webform-client-form .form-item.webform-component-prikrepit-fayl-rezyume label {
 		padding: 0;
 		margin: 0 0 10px 0;
+		display: none;
 	}
 	.block_summary_send .block-webform .webform-client-form .webform-component-managed_file .my_style_button_upload_file {
 		display: inline-block;
@@ -3991,9 +4003,7 @@
 	.view-offers.view-display-id-block_4 .view-content .views-row {
 		margin-bottom: 15px;
 	}
-	.btn_form_fixed {
-		display: none;
-	}
+	
 	.block_drupal_package_block_about_main .field_inner_wrap_field_about_main_link .field-name-field-about-main-link > .field-items > .field-item .field-name-field-about-main-link-item a {
 		text-decoration: underline!important;
 	}
@@ -4003,17 +4013,16 @@
 	.block_summary_send .block-webform .webform-client-form .form-item textarea {
 		margin-top: 3px;
 	}
-	.footer {
-		z-index: 997;
+	.block_views_news_block_4 .item-list .pager li {
+		margin-left: 0;
 	}
-
-
-
-
-
-
-
 	
+
+
+
+
+
+
 
 }
 

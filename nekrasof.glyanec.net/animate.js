@@ -121,7 +121,9 @@
     anim($('div'), $('#block-views-artists-block-4 .view-display-id-block_4 .views-row'), $('#block-views-artists-block-4 .view-display-id-block_4 .views-row'), 'show', 200);
     anim($('div'), $('#block-views-related-services-block-2 .block_content .view-content .views-row'), $('#block-views-related-services-block-2 .block_content .view-content .views-row'), 'show', 200);
     anim($('div'), $('#block-drupal-package-block-services-order-text-2 .field-name-field-benefits'), $('#block-drupal-package-block-services-order-text-2 .field-name-field-benefits > .field-items > .field-item'), 'show', 200);
-    anim($('div'), $('#block-system-main .block_content .view-content .views-row'), $('#block-system-main .block_content .view-content .views-row'), 'show', 200);
+    $('#block-system-main .block_content .view-content').livequery(function(){
+      anim($('div'), $('#block-system-main .block_content .view-content .views-row'), $('#block-system-main .block_content .view-content .views-row'), 'show', 200);
+    });
 
     anim($('div'), $('#block-drupal-package-block-certificates-page-description .field_inner_wrap_field_description_imgs'), $('#block-drupal-package-block-certificates-page-description .field_inner_wrap_field_description_imgs .field-items .field-item'), 'show', 200);
 
