@@ -370,7 +370,7 @@
 			}
 		});
 
-		var spanText = $('.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value .views-widget .form-item label span').text();
+		var spanText = $('.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value .views-widget .form-item label span.allotment').text();
 		$('.view-artists.view-display-id-page_1 .view-filters .views-widget-filter-title_field_value .views-widget .form-item label span').livequery('click',function(){
 			$(this).parents('form').find('.form-text').val(spanText);
 			$(this).parents('.form-item').addClass('active span_click');

@@ -239,6 +239,9 @@
     text-overflow: ellipsis;
     width: 100%; 
 }
+.view-artists-category .views-exposed-form label span {
+	display: none;
+}
 .view-artists-category .views-exposed-form .form-item input {
 	border: none;
     outline: none;
@@ -3765,7 +3768,8 @@
 
 	}
 	.close {
-		right: 0;
+		right: 10px;
+		top: 10px;
 	}
 	.page-node.node-type-news .node iframe {
 		height: auto!important;
@@ -3996,9 +4000,7 @@
 	.footer .block-webform {
 		margin: 0;
 		transform: translate(-50%,-50%);
-		width: 90vw;
-		height: 65vh;
-		overflow-y: scroll;
+		width: 97vw;
 	}
 	.view-offers.view-display-id-block_4 .view-content .views-row {
 		margin-bottom: 15px;
@@ -4016,6 +4018,7 @@
 	.block_views_news_block_4 .item-list .pager li {
 		margin-left: 0;
 	}
+
 	
 
 
@@ -4140,4 +4143,13 @@
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+}
+
+
+@media (max-height: 650px) {
+	.footer .block-webform {
+		height: 65vh;
+		overflow-y: scroll;
+	}
+  
 }

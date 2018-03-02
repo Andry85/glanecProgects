@@ -243,8 +243,16 @@
 			    $(".btn_form_fixed").click(function() {
 					if($(".footer .block-webform:visible" )) {
 						$('.front .header .logo_wrapper').hide();
+						$('.footer').css("z-index","101");
 					}
 				});
+
+				$(".footer .block-webform .close,.popup_exit").click(function() {
+					$('.footer').css("z-index","97");
+				});
+
+			
+				
 
 
 
