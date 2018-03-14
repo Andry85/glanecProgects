@@ -126,8 +126,11 @@
 			});
 		}
 		$('.youtube').click(function(){
+			$('.youtube.active').removeClass('active');
+			$('.youtube iframe').remove();
+			$('.youtube img').show();
 			$vid = $(this).attr('data-id');
-			$(this).find('img').remove();
+			$(this).find('img').hide();
 			$(this).addClass('active');
 			$(this).append('<iframe src="https://www.youtube.com/embed/'+$vid+'?autoplay=1&rel=0" allowfullscreen></iframe>');
 		})

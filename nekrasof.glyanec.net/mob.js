@@ -251,6 +251,8 @@
 					$('.footer').css("z-index","97");
 				});
 
+				$(".view-diplomas.view-display-id-page_1 .view-content").wrapInner("<div class='diplomas-inner'></div>");
+
 			
 				
 
